@@ -1,0 +1,30 @@
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1b007f;
+  height: 54px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  max-width: 93px;
+  max-height: 34px;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #00ff66;
+  margin-right: 25px;
+  margin-left: 25px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+}
