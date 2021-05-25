@@ -1,8 +1,8 @@
-.navContainer{
-    display:flex;
-    flex-direction: row;
+.navContainer {
+  display: flex;
+  flex-direction: row;
 }
 
-.navLink{
-    text-decoration: none;
+.navLink {
+  text-decoration: none;
 }

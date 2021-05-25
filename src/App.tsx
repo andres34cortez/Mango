@@ -1,18 +1,16 @@
-import React, { useState } from 'react';
-import {Switch, Route} from 'react-router-dom';
-import NavBar from './components/NavBar'
-import './App.css';
-import Home from './screens/home';
+import React, { useState } from "react";
+import { Switch, Route } from "react-router-dom";
+import "./App.css";
+import NavBar from "./components/NavBar";
 
-function App() { 
+import Home from "./screens/home";
+
+function App() {
   return (
     <div className="App">
-      <NavBar/>
+      <NavBar />
       <Switch>
-
-        <Route exact path ="/" component={Home}/>
-
-        
+        <Route exact path="/" component={Home} />
       </Switch>
     </div>
   );
