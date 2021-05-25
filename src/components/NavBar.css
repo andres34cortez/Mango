@@ -1,0 +1,8 @@
+.navContainer{
+    display:flex;
+    flex-direction: row;
+}
+
+.navLink{
+    text-decoration: none;
+}
