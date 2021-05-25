@@ -1,8 +1,16 @@
+
 .navContainer {
   display: flex;
   flex-direction: row;
+  background-color: #1B007F;
 }
 
 .navLink {
   text-decoration: none;
+  color: #00FF66;
+  font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px; 
 }
