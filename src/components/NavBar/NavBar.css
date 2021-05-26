@@ -5,6 +5,7 @@
   align-items: center;
   background-color: #1b007f;
   height: 54px;
+  z-index: 1;
 }
 
 .row {
