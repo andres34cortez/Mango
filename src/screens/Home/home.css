@@ -1,0 +1,8 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 0;
+  min-width: 1280;
+  max-width: 1600px;
+}
