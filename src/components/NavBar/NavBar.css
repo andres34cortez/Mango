@@ -1,8 +1,9 @@
 .navContainer {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding-top: 15;
   background-color: #1b007f;
   height: 54px;
   z-index: 1;
