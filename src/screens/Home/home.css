@@ -4,4 +4,5 @@
   flex-grow: 1;
   flex-shrink: 0;
   min-width: 1280px;
+  overflow-x: hidden;
 }

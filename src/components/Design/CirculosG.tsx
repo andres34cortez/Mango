@@ -1,36 +1,35 @@
 import React from "react";
-import Rocket from "../../assets/Rocket.png"
+import Rocket from "../../assets/Rocket.png";
+import { Row, Col, Box } from "jsxstyle";
 
 interface Props {
   width: string;
   height: string;
   color: string;
-  rigth?:string;
-  top?:string;
+  rigth?: string;
+  top?: string;
 }
 
 const CircleG = (props: Props) => {
   return (
-      
-    <div
+    <Row
       className="circleContainer"
       style={{
-          position:"absolute",
+        position: "absolute",
         width: `${props.width}`,
         height: `${props.height}`,
         backgroundColor: `${props.color}`,
-        right:`${props.rigth}`,   
-        top:`${props.top}`,
+        right: `${props.rigth}`,
+        top: `${props.top}`,
+        overflowX: "hidden",
+        alignItems: "center",
+        justifyContent: "center",
       }}
-
-
     >
-
-<div style={{position:"absolute" }}>
+      <Row style={{ position: "absolute" }}>
         <img src={Rocket} />
-      </div>
-
-    </div>
+      </Row>
+    </Row>
   );
 };
 
