@@ -1,5 +1,4 @@
 import React from "react";
-import Circle from "../../components/Design/Circulos";
 import Ring from "../../components/Design/Ring";
 import Rectangulo from "../../components/Design/Rectangulo";
 import Button from "../../components/Button/button";
@@ -8,11 +7,6 @@ import "./home.css";
 const Home = () => {
   return (
     <div className="home">
-      {/* circulo grande */}
-      {/* <div style={{ position: "relative", top: -133, right: -90, zIndex: 0 }}>
-        <Circle width="1089px" height="1089px" border="550px solid #1B007F" />
-      </div> */}
-      {/* circulos pequenos */}
       <div style={{ marginLeft: 60, marginTop: 15, zIndex: 1 }}>
         <Ring width="157px" height="157px" border="50px solid #F5F5F5" />
       </div>
