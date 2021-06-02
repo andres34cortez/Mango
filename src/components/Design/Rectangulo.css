@@ -1,28 +1,25 @@
-.Linea{
-    width: 258px;
-height: 33px;
-background: #C6ECE1;
-margin-top: 30px;
-margin-bottom: 30px;
-
+.Linea {
+  width: 258px;
+  height: 33px;
+  background: #c6ece1;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-.derecha{
-    transform: rotate(-45deg);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+.derecha {
+  transform: rotate(-45deg);
+  position: absolute;
+  z-index: 1;
 }
-.izquierda{
-    transform: rotate(45deg);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
+.izquierda {
+  transform: rotate(45deg);
+  position: absolute;
+  z-index: 0;
 }
-.todo{
-    display: flex;
-    position: relative;    
-
-
+.todo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 300px;
+  width: 300px;
 }

@@ -1,10 +1,13 @@
 import React from "react";
-import "./Circulos.css";
+import "./Ring.css";
 
 interface Props {
   width: string;
   height: string;
   border: string;
+  position?: string;
+  left?: string;
+  top?: string;
 }
 
 const Circle = (props: Props) => {
@@ -12,9 +15,12 @@ const Circle = (props: Props) => {
     <div
       className="circleContainer"
       style={{
-        maxWidth: `${props.width}`,
-        minHeight: `${props.height}`,
+        width: `${props.width}`,
+        height: `${props.height}`,
         border: `${props.border}`,
+        position: `${props.position}`,
+        left: `${props.left}`,
+        top: `${props.top}`,
       }}
     />
   );

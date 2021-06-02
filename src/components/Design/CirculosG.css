@@ -1,0 +1,5 @@
+.circleContainer {
+  border-radius: 5000px;
+  overflow-x: hidden;
+  z-index: 0;
+}
