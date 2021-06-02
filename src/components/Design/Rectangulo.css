@@ -1,8 +1,8 @@
 .Linea {
-  width: 258px;
-  height: 33px;
+  width: 350px;
+  height: 40px;
   background: #c6ece1;
-  margin-top: 30px;
+  margin-top: 40px;
   margin-bottom: 30px;
 }
 .derecha {
@@ -19,7 +19,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: absolute;
   height: 300px;
+  top: 700px;
+  left: 150px;
   width: 300px;
 }
