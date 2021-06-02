@@ -4,10 +4,12 @@ import Rectangulo from "../../components/Design/Rectangulo";
 import Button from "../../components/Button/button";
 import "./home.css";
 import CircleG from "../../components/Design/CirculosG";
+import { Container, Hidden } from "@material-ui/core";
 const Home = () => {
   return (
-    <div className="home">
-      <div>
+   < Container>  
+     <div className="home">
+      <div style={{overflow:"hidden"}}>
         <CircleG
           width="1090px"
           height="1090px"
@@ -29,6 +31,7 @@ const Home = () => {
         <Button text="Agendar" />
       </div>
     </div>
+    </Container>
   );
 };
 

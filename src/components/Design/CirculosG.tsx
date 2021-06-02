@@ -2,6 +2,7 @@ import React from "react";
 import Rocket from "../../assets/Rocket.png";
 import { Row, Col, Box } from "jsxstyle";
 
+
 interface Props {
   width: string;
   height: string;
@@ -21,7 +22,7 @@ const CircleG = (props: Props) => {
         backgroundColor: `${props.color}`,
         right: `${props.rigth}`,
         top: `${props.top}`,
-        overflowX: "hidden",
+        
         alignItems: "center",
         justifyContent: "center",
       }}
