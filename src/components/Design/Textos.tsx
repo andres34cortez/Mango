@@ -1,24 +1,30 @@
 import React from "react";
-import "./Rectangulo.css";
+import "./Textos.css";
+ 
+interface Props{
+  titulo:string;
+  subtitulo:string;
+  top:string;
+  left:string;
+  efecto?:string
 
-const Linea = () => {
-  return <div className="Linea" />;
-};
+}
 
-const Rectangulo = () => {
+
+const Texto = (props:Props) => {
   return (
-    <div className="todo">
-      <div className="derecha">
-        <Linea></Linea>
-        <Linea></Linea>
-        <Linea></Linea>
-      </div>
-      <div className="izquierda">
-        <Linea></Linea>
-        <Linea></Linea>
-        <Linea></Linea>
-      </div>
-    </div>
+   <div style={{
+    top:`${props.top}`,
+    left:`${props.left}`,
+    zIndex:8888,
+    height: "11.18vw",
+    width: "29.3vw",
+    position:"absolute"
+    
+   }}>
+     <h1 >{props.titulo}</h1>
+     <h2 >{props.subtitulo}</h2>
+   </div>
   );
 };
-export default Rectangulo;
+export default Texto;

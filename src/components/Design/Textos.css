@@ -1,0 +1,26 @@
+h1{
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 3.4vw;
+line-height: 3.88vw;
+text-align: left;
+
+color: #F5F5F5; 
+border:black;
+}
+h2{
+ /* h5 */
+
+font-family: Roboto;
+font-style: normal;
+font-weight:bold;
+font-size: 1.3vw;
+line-height: 1.6vw;
+text-align: left;
+/* ligth gray */
+
+color: #F5F5F5;  
+
+
+}

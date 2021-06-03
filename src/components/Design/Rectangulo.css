@@ -1,9 +1,9 @@
 .Linea {
-  width: 350px;
-  height: 40px;
+  width: 24.3vw;
+  height: 2.7vw;
   background: #c6ece1;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  margin-top: 2.7vw;
+  margin-bottom: 2.08vw;
 }
 .derecha {
   transform: rotate(-45deg);
@@ -20,8 +20,8 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  height: 300px;
-  top: 700px;
-  left: 150px;
-  width: 300px;
+  height: 20.8vw;
+  top: 48.6vw;
+  left: 10.41vw;
+  width: 20.8vw;
 }

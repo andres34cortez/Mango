@@ -67,7 +67,7 @@ const CircleG = (props: Props) => {
          border="5vw solid #F5F5F5"
          position="absolute"
          top="90vw"
-         left="60.1vw"
+         left="63.1vw"
          opacity="0.3" />
          
 

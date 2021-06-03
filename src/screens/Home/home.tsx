@@ -5,6 +5,8 @@ import Button from "../../components/Button/button";
 import "./home.css";
 import CircleG from "../../components/Design/CirculosG";
 import { Container } from "@material-ui/core";
+import Texto from "../../components/Design/Textos";
+import Banner from "../../components/Design/Banner";
 
 const Home = () => {
   return (
@@ -15,24 +17,88 @@ const Home = () => {
           width="75.69vw"
           height="75.69vw"
           color="#1B007F"
-          right="-7.22vw"
+          right="-10.22vw"
           top="-9.25vw"
         />
         <Ring
-          width="11vw"
-          height="11vw"
-          border="3vw solid #F5F5F5"
+          width="10.9vw"
+          height="10.9vw"
+          border="3.47vw solid #F5F5F5"
           position="absolute"
-          top="60px"
-          left="15px"
+          top="5.9vw"
+          left="2.9vw"
         />
         <Ring
-          width="69px"
-          height="69px"
-          border="20px solid #F5F5F5"
+          width="4.8vw"
+          height="4.8vw"
+          border="2.08vw solid #F5F5F5"
           position="absolute"
-          top="200px"
-          left="250px"
+          top="15.5vw"
+          left="23.47vw"
+        />
+
+<Ring
+          width="23vw"
+          height="23vw"
+          border="8vw solid #F5F5F5"
+          position="absolute"
+          top="75vw"
+          left="-1.25vw"
+          opacity="0.1"
+        />  
+        <Ring
+          width="20vw"
+          height="20vw"
+          border="6vw solid #F5F5F5"
+          position="absolute"
+          top="103vw"
+          left="62.5vw"
+          opacity="0.1"
+        />
+        <Ring
+          width="4.8vw"
+          height="4.8vw"
+          border="2.08vw solid #F5F5F5"
+          position="absolute"
+          top="15.5vw"
+          left="23.47vw"
+          opacity="0.13"
+        />
+        <Ring
+          width="4.8vw"
+          height="4.8vw"
+          border="2.08vw solid #F5F5F5"
+          position="absolute"
+          top="15.5vw"
+          left="23.47vw"
+          opacity="0.2"
+        />
+        <Ring
+          width="4.8vw"
+          height="4.8vw"
+          border="2.08vw solid #F5F5F5"
+          position="absolute"
+          top="15.5vw"
+          left="23.47vw"
+          opacity="0.1"
+        />
+        <Ring
+          width="4.8vw"
+          height="4.8vw"
+          border="2.08vw solid #F5F5F5"
+          position="absolute"
+          top="15.5vw"
+          left="23.47vw"
+          opacity="0.1"
+        />
+        <Ring
+          width="4.8vw"
+          height="4.8vw"
+          border="2.08vw solid #F5F5F5"
+          position="absolute"
+          top="15.5vw"
+          left="23.47vw"
+          opacity="0.3"
         />
       
         
@@ -42,10 +108,21 @@ const Home = () => {
      
         <Button   
         text="Agendar" 
-        top="200px" 
-        left="200px" />
+        top="43vw" 
+        left="38.25vw" />
      
-  
+        <Texto
+        titulo="Ayudanos a que tu marca despegue y suba de nivel"
+        subtitulo="Con estategias de Branding,Marketing y el poder del Diseño"
+        top="21.6vw"
+        left="13.9vw"
+        />
+
+        <Banner
+        top="78vw"
+        width="100vw"
+        height="22.36vw"
+        />
     
       </div>
     

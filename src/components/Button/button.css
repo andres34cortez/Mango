@@ -3,20 +3,40 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    padding-top: 19px;
-    padding-bottom: 19px; 
+    padding-top: 1.3vw;
+    padding-bottom: 1.3vw; 
    background: #00FF66;
-   width: 112px; ;
+   width: 10.97vw; 
+ 
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-   border-radius: 9px;
+   border-radius: 0.6vw;
 }
 .texto{
     margin: 0px;
     
     font-family: Roboto;
     font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
+    font-weight: bold;
+    font-size: 1vw;
+    line-height: 1.11vw;
     text-align: center;
+    color: black;
+}
+h3{
+    position: absolute;
+    width: 10.97vw;
+    height: 2vw;
+   
+    top: 3.5vw;
+    
+    /* P1 */
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.85vw;
+    line-height: 1vw;
+    text-align: center;
+    
+    color: #F5F5F5; 
 }
