@@ -21,20 +21,20 @@ const Home = () => {
           top="-9.25vw"
         />
         <Ring
-          width="10.9vw"
-          height="10.9vw"
-          border="3.47vw solid #F5F5F5"
+          width="8vw"
+          height="8vw"
+          border="2vw solid #F5F5F5"
           position="absolute"
-          top="5.9vw"
-          left="2.9vw"
+          top="4vw"
+          left="2vw"
         />
         <Ring
-          width="4.8vw"
-          height="4.8vw"
-          border="2.08vw solid #F5F5F5"
+          width="3vw"
+          height="3vw"
+          border="1vw solid #F5F5F5"
           position="absolute"
-          top="15.5vw"
-          left="23.47vw"
+          top="15vw"
+          left="17vw"
         />
 
 <Ring
@@ -56,49 +56,49 @@ const Home = () => {
           opacity="0.1"
         />
         <Ring
-          width="4.8vw"
-          height="4.8vw"
-          border="2.08vw solid #F5F5F5"
+          width="9.17vw"
+          height="9.17vw"
+          border="3vw solid #F5F5F5"
           position="absolute"
-          top="15.5vw"
-          left="23.47vw"
+          top="165vw"
+          left="85vw"
           opacity="0.13"
         />
         <Ring
-          width="4.8vw"
-          height="4.8vw"
-          border="2.08vw solid #F5F5F5"
+          width="18vw"
+          height="18vw"
+          border="4vw solid #F5F5F5"
           position="absolute"
-          top="15.5vw"
-          left="23.47vw"
+          top="175vw"
+          left="60vw"
           opacity="0.2"
         />
         <Ring
-          width="4.8vw"
-          height="4.8vw"
-          border="2.08vw solid #F5F5F5"
+          width="27vw"
+          height="27vw"
+          border="6vw solid #F5F5F5"
           position="absolute"
-          top="15.5vw"
+          top="195vw"
           left="23.47vw"
           opacity="0.1"
         />
         <Ring
-          width="4.8vw"
-          height="4.8vw"
-          border="2.08vw solid #F5F5F5"
+          width="36vw"
+          height="36vw"
+          border="12vw solid #F5F5F5"
           position="absolute"
-          top="15.5vw"
-          left="23.47vw"
+          top="220vw"
+          left="-30vw"
           opacity="0.1"
         />
         <Ring
-          width="4.8vw"
-          height="4.8vw"
-          border="2.08vw solid #F5F5F5"
+          width="35vw"
+          height="35vw"
+          border="12vw solid #F5F5F5"
           position="absolute"
-          top="15.5vw"
-          left="23.47vw"
-          opacity="0.3"
+          top="230vw"
+          left="50vw"
+          opacity="0.2"
         />
       
         

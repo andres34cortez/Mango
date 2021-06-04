@@ -38,7 +38,7 @@ const Banner = (props: Props) => {
     <Row>
 
         <Texto
-        titulo="¿Qué  es el  MANGO VERDE?"
+        titulo="¿Qué  es  MANGO VERDE?"
         subtitulo="Somos una agencia de Marketing Digital, enfocada en ayudar a nuestros clientes a despegar sus emprendimientos y llevar su empresa al siguiente nivel!"
         top="77vw"
         left="13.9vw"
