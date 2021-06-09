@@ -7,19 +7,20 @@ import CircleG from "../../components/Design/CirculosG";
 import { Container } from "@material-ui/core";
 import Texto from "../../components/Design/Textos";
 import Banner from "../../components/Design/Banner";
+import Footer from "../../components/Design/Footer";
 
 const Home = () => {
   return (
    
       <div className="home">
         
-        <CircleG
+        {<CircleG
           width="75.69vw"
           height="75.69vw"
           color="#1B007F"
           right="-10.22vw"
           top="-9.25vw"
-        />
+        />}
         <Ring
           width="8vw"
           height="8vw"
@@ -35,6 +36,7 @@ const Home = () => {
           position="absolute"
           top="15vw"
           left="17vw"
+          opacity="1"
         />
 
 <Ring
@@ -123,6 +125,8 @@ const Home = () => {
         width="100vw"
         height="22.36vw"
         />
+      
+        
     
       </div>
     

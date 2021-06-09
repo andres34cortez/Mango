@@ -25,7 +25,7 @@ const CircleG = (props: Props) => {
         alignItems: "center",
         justifyContent: "center",
       }}
-    >
+    > 
       <Row style={{ position: "absolute"  }}>
         <img src={Rocket} style={{width:"45vw",}} />
       </Row>

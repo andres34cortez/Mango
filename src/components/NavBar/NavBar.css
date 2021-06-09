@@ -13,25 +13,25 @@
 .row {
   display: flex;
   flex-direction: row;
-  max-width: 1280px;
+  max-width: 75vw;
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
 }
 
 .logo {
-  max-width: 93px;
-  max-height: 34px;
+  max-width: 6.46vw;
+  max-height: 2.36vw;
 }
 
 .navLink {
   text-decoration: none;
   color: #00ff66;
-  margin-right: 25px;
-  margin-left: 25px;
+  margin-right: 1.74vw;
+  margin-left: 1.74vw;
   font-family: Roboto;
   font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
+  font-weight: 34.42vw;
+  font-size: 0.83vw;
+  line-height: 0.93vw;
 }
