@@ -38,7 +38,7 @@ const Home = () => {
           left="17vw"
           opacity="1"
         />
-
+        
 <Ring
           width="23vw"
           height="23vw"

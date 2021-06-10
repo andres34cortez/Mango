@@ -1,0 +1,17 @@
+.tarjeta1 {
+  height: 23.06vw;
+  width: 20.14vw;
+  border-radius: 1.04vw;
+  flex-wrap: wrap;
+}
+
+.imagen {
+  width: 100%;
+  height: 13.2vw;
+}
+
+.title1 {
+}
+
+.text {
+}
