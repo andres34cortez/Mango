@@ -1,9 +1,9 @@
-import { Col, Row } from "jsxstyle";
 import React from "react";
 import "./Footer.css";
+import { Col, Row } from "jsxstyle";
 import Logo2 from "../../assets/Logo2.png";
 import instagram from "../../assets/instagram.png";
-import facebook from "../../assets/facebook.png"
+import facebook from "../../assets/facebook.png";
 
 const Footer = () => {
   return (
@@ -11,37 +11,40 @@ const Footer = () => {
       <Row flex="1" justifyContent="space-between">
         <Col className="columna" maxWidth="22.36vw">
           <img src={Logo2} alt="" className="Logo2" />
-         
-          <div className="rsociales">
-            <img src={instagram}></img>
-            <img src={facebook}></img>
-          </div>
+          <Row className="rsociales" paddingLeft="2.5vw">
+            <img src={instagram} />
+            <div style={{ marginRight: "1vw" }} />
+            <img src={facebook} />
+          </Row>
         </Col>
         <Col className="columna" maxWidth="45.7vw">
-          <Col className="columna11">
-            <Row>Inicio</Row>
-            <Row>Contacto</Row>
-            <Row>Proyectos</Row>
-          </Col>
-          <Col className="columna12">
-            <Row>Servicios</Row>
-            <Row>Marketing</Row>
-            <Row>Brandings</Row>
-          </Col>
-          <Col className="columna13">
-            <Row>Social Media</Row>
-            <Row>
-              Desarrollo
-              <br />
-              WEB
-            </Row>
-        
-            <Row>
-              Desarrollo
-              <br />
-              SoftWare
-            </Row>
-          </Col>
+          <Row flex={1} alignItems="center" justifyContent="center">
+            <Col className="columna1">
+              <Row marginBottom="3vw">Inicio</Row>
+              <Row marginBottom="3vw">Contacto</Row>
+              <Row>Proyectos</Row>
+            </Col>
+            <div style={{ marginLeft: "8vw" }} />
+            <Col className="columna1">
+              <Row marginBottom="3vw">Servicios</Row>
+              <Row marginBottom="3vw">Marketing</Row>
+              <Row>Brandings</Row>
+            </Col>
+            <div style={{ marginLeft: "8vw" }} />
+            <Col className="columna1" paddingTop="1.7vw">
+              <Row marginBottom="1.4vw">Social Media</Row>
+              <Row marginBottom="0.5vw" paddingTop="1.5vw">
+                Desarrollo
+                <br />
+                WEB
+              </Row>
+              <Row marginTop="1vw">
+                Desarrollo
+                <br />
+                SoftWare
+              </Row>
+            </Col>
+          </Row>
         </Col>
       </Row>
       <Row justifyContent="space-between" className="links">

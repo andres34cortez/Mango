@@ -3,9 +3,9 @@ import "./Textos.css";
 
 interface Props {
   children?: React.ReactNode;
-  subtitulo: string;
-  top: string;
-  left: string;
+  subtitulo?: string;
+  top?: string;
+  left?: string;
   efecto?: string;
 }
 

@@ -42,7 +42,8 @@ const Banner = (props: Props) => {
           left="13.9vw"
           efecto=""
         >
-          ¿Qué es <span style={{ color: "#00FF66" }}>MANGO VERDE</span>?
+          ¿Qué es <br />
+          <span style={{ color: "#00FF66" }}>MANGO VERDE</span>?
         </Texto>
       </Row>
     </Row>

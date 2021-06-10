@@ -1,13 +1,19 @@
 import React from "react";
+import "./home.css";
+import { Col, Row } from "jsxstyle";
+
 import Ring from "../../components/Design/Ring";
 import Rectangulo from "../../components/Design/Rectangulo";
 import Button from "../../components/Button/button";
-import "./home.css";
 import CircleG from "../../components/Design/CirculosG";
 import Texto from "../../components/Design/Textos";
 import Banner from "../../components/Design/Banner";
-import Footer from "../../components/Design/Footer";
 import Circle from "../../components/Design/Circulos";
+import Tarjeta1 from "../../components/Design/Tarjeta1";
+
+import Agilidad from "../../assets/Agilidad.png";
+import Transparencia from "../../assets/transparencia.png";
+import Low from "../../assets/Low.png";
 
 const Home = () => {
   return (
@@ -109,6 +115,32 @@ const Home = () => {
         Ayudanos a que tu marca despegue y suba de nivel
       </Texto>
       <Banner top="78vw" width="100vw" height="22.36vw" />
+      <Col paddingTop="101vw">
+        <Texto>
+          ¿Por qué <br />
+          <span style={{ color: "#00FF66" }}>MANGO VERDE</span>?
+        </Texto>
+        <Row paddingTop="11vw">
+          <div style={{ marginRight: "2vw" }} />
+          <Tarjeta1 imagen={Agilidad} title="Agilidad y Resultados">
+            La agilidad y los buenos resultados nos han hecho que los clientes
+            nos prefieran la parte de la creación de campañas disruptivas ahi va
+            la clave de atraerles clientes y ventas altas eso es lo que les
+            gusta
+          </Tarjeta1>
+          <div style={{ marginRight: "4vw" }} />
+          <Tarjeta1 imagen={Transparencia} title="Transparencia">
+            Somos trasparentes a las personas les encanta que nosotros les
+            dejamos libre el presupuesto de su pauta pagada
+          </Tarjeta1>
+          <div style={{ marginRight: "4vw" }} />
+          <Tarjeta1 imagen={Low} title="Low budget">
+            Ofrecemos low budget en cosas de diseño que nos ha llegado a generar
+            mas clientes porque por el tema de la pandemia quien te va a pagar
+            $1000 mensuales y eso nos ha hecho tener muy buenos clientes...
+          </Tarjeta1>
+        </Row>
+      </Col>
       <Circle
         width="105vw"
         height="100%"
