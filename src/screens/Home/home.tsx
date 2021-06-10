@@ -1,6 +1,5 @@
 import React from "react";
-import "./home.css";
-import { Col, Row } from "jsxstyle";
+import { Col, Row, Box } from "jsxstyle";
 
 import Ring from "../../components/Design/Ring";
 import Rectangulo from "../../components/Design/Rectangulo";
@@ -15,96 +14,121 @@ import Agilidad from "../../assets/Agilidad.png";
 import Transparencia from "../../assets/transparencia.png";
 import Low from "../../assets/Low.png";
 
+const Circulos = () => {
+  return (
+    <Col
+      position="absolute"
+      top={0}
+      left={0}
+      right={0}
+      bottom={0}
+      overflow="hidden"
+    >
+      <Box position="relative" flex="1">
+        <CircleG
+          width="75.69vw"
+          height="75.69vw"
+          color="#1B007F"
+          right="-10.22vw"
+          top="-9.25vw"
+        />
+        <Ring
+          width="8vw"
+          height="8vw"
+          border="2vw solid #F5F5F5"
+          position="absolute"
+          top="4vw"
+          left="2vw"
+        />
+        <Ring
+          width="3vw"
+          height="3vw"
+          border="1vw solid #F5F5F5"
+          position="absolute"
+          top="15vw"
+          left="17vw"
+          opacity="1"
+        />
+        <Ring
+          width="23vw"
+          height="23vw"
+          border="8vw solid #F5F5F5"
+          position="absolute"
+          top="75vw"
+          left="-1.25vw"
+          opacity="0.1"
+        />
+        <Ring
+          width="20vw"
+          height="20vw"
+          border="6vw solid #F5F5F5"
+          position="absolute"
+          top="103vw"
+          left="62.5vw"
+          opacity="0.1"
+        />
+        <Ring
+          width="9.17vw"
+          height="9.17vw"
+          border="3vw solid #F5F5F5"
+          position="absolute"
+          top="165vw"
+          left="85vw"
+          opacity="0.13"
+        />
+        <Ring
+          width="18vw"
+          height="18vw"
+          border="4vw solid #F5F5F5"
+          position="absolute"
+          top="175vw"
+          left="60vw"
+          opacity="0.2"
+        />
+        <Ring
+          width="27vw"
+          height="27vw"
+          border="6vw solid #F5F5F5"
+          position="absolute"
+          top="195vw"
+          left="23.47vw"
+          opacity="0.1"
+        />
+        <Ring
+          width="36vw"
+          height="36vw"
+          border="12vw solid #F5F5F5"
+          position="absolute"
+          top="220vw"
+          left="-30vw"
+          opacity="0.1"
+        />
+        <Ring
+          width="35vw"
+          height="35vw"
+          border="12vw solid #F5F5F5"
+          position="absolute"
+          top="230vw"
+          left="50vw"
+          opacity="0.2"
+        />
+
+        <Circle
+          width="105vw"
+          height="100%"
+          color="#5000FF"
+          right="0"
+          top="180vw"
+        />
+      </Box>
+    </Col>
+  );
+};
+
 const Home = () => {
   return (
-    <div className="home">
-      <CircleG
-        width="75.69vw"
-        height="75.69vw"
-        color="#1B007F"
-        right="-10.22vw"
-        top="-9.25vw"
-      />
-      <Ring
-        width="8vw"
-        height="8vw"
-        border="2vw solid #F5F5F5"
-        position="absolute"
-        top="4vw"
-        left="2vw"
-      />
-      <Ring
-        width="3vw"
-        height="3vw"
-        border="1vw solid #F5F5F5"
-        position="absolute"
-        top="15vw"
-        left="17vw"
-        opacity="1"
-      />
-      <Ring
-        width="23vw"
-        height="23vw"
-        border="8vw solid #F5F5F5"
-        position="absolute"
-        top="75vw"
-        left="-1.25vw"
-        opacity="0.1"
-      />
-      <Ring
-        width="20vw"
-        height="20vw"
-        border="6vw solid #F5F5F5"
-        position="absolute"
-        top="103vw"
-        left="62.5vw"
-        opacity="0.1"
-      />
-      <Ring
-        width="9.17vw"
-        height="9.17vw"
-        border="3vw solid #F5F5F5"
-        position="absolute"
-        top="165vw"
-        left="85vw"
-        opacity="0.13"
-      />
-      <Ring
-        width="18vw"
-        height="18vw"
-        border="4vw solid #F5F5F5"
-        position="absolute"
-        top="175vw"
-        left="60vw"
-        opacity="0.2"
-      />
-      <Ring
-        width="27vw"
-        height="27vw"
-        border="6vw solid #F5F5F5"
-        position="absolute"
-        top="195vw"
-        left="23.47vw"
-        opacity="0.1"
-      />
-      <Ring
-        width="36vw"
-        height="36vw"
-        border="12vw solid #F5F5F5"
-        position="absolute"
-        top="220vw"
-        left="-30vw"
-        opacity="0.1"
-      />
-      <Ring
-        width="35vw"
-        height="35vw"
-        border="12vw solid #F5F5F5"
-        position="absolute"
-        top="230vw"
-        left="50vw"
-        opacity="0.2"
-      />
+    <Col position="relative">
+      <Circulos />
       <Rectangulo />
       <Button text="Agendar" top="43vw" left="38.25vw" />
       <Texto
@@ -115,12 +139,14 @@ const Home = () => {
         Ayudanos a que tu marca despegue y suba de nivel
       </Texto>
       <Banner top="78vw" width="100vw" height="22.36vw" />
-      <Col paddingTop="101vw">
-        <Texto>
-          ¿Por qué <br />
-          <span style={{ color: "#00FF66" }}>MANGO VERDE</span>?
-        </Texto>
-        <Row paddingTop="11vw">
+      <Col paddingTop="101vw" alignItems="center">
+        <Row justifyContent="flex-end" style={{ marginLeft: "-13.5vw" }}>
+          <Texto>
+            ¿Por qué <br />
+            <span style={{ color: "#00FF66" }}>MANGO VERDE</span>?
+          </Texto>
+        </Row>
+        <Row paddingTop="11vw" justifyContent="center">
           <div style={{ marginRight: "2vw" }} />
           <Tarjeta1 imagen={Agilidad} title="Agilidad y Resultados">
             La agilidad y los buenos resultados nos han hecho que los clientes
@@ -141,14 +167,7 @@ const Home = () => {
           </Tarjeta1>
         </Row>
       </Col>
-      <Circle
-        width="105vw"
-        height="100%"
-        color="#5000FF"
-        right="0"
-        top="180vw"
-      />
-    </div>
+    </Col>
   );
 };
 

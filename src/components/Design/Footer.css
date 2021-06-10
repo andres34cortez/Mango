@@ -3,12 +3,11 @@
   height: 32.77vw;
   bottom: 1vw;
   left: 5.55vw;
-  top: 260.06vw;
   background: #1b007f;
   z-index: 1888888;
-  position: absolute;
   border-radius: 1vw;
   justify-content: center;
+  align-self: center;
 }
 
 .terminos {

@@ -4,10 +4,15 @@ import { Col, Row } from "jsxstyle";
 import Logo2 from "../../assets/Logo2.png";
 import instagram from "../../assets/instagram.png";
 import facebook from "../../assets/facebook.png";
+import { useLocation } from "react-router-dom";
 
 const Footer = () => {
+  const location = useLocation();
   return (
-    <Col className="Todo">
+    <Col
+      className="Todo"
+      // top={location.pathname === "/" ? "260vw" : "5vw"}
+    >
       <Row flex="1" justifyContent="space-between">
         <Col className="columna" maxWidth="22.36vw">
           <img src={Logo2} alt="" className="Logo2" />
