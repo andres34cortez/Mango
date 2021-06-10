@@ -8,19 +8,20 @@ import { Container } from "@material-ui/core";
 import Texto from "../../components/Design/Textos";
 import Banner from "../../components/Design/Banner";
 import Footer from "../../components/Design/Footer";
+import Circle from "../../components/Design/Circulos";
 
 const Home = () => {
   return (
    
       <div className="home">
         
-        {<CircleG
+        <CircleG
           width="75.69vw"
           height="75.69vw"
           color="#1B007F"
           right="-10.22vw"
           top="-9.25vw"
-        />}
+        />
         <Ring
           width="8vw"
           height="8vw"
@@ -126,7 +127,16 @@ const Home = () => {
         height="22.36vw"
         />
       
+        <Circle
+     width="105vw"
+     height="100%"
+     color="#5000FF"
+     right="0"
+     top="180vw"
         
+        />
+
+       
     
       </div>
     

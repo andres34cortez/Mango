@@ -1,14 +1,15 @@
 .Todo{
    width:88.95vw ; 
    height: 32.77vw;
-  bottom: 1px;
+  bottom: 1vw;
    left: 5.55vw;
    top: 260.06vw;
-   background-color: #d83d17;
+   background: #1B007F;
    z-index: 1888888;
    position: absolute;
    border-radius: 1vw;
    justify-content: center;
+   
 }
 
 .terminos{
@@ -18,6 +19,7 @@ font-weight: 500;
 font-size: 20px;
 line-height: 23px;
 color: #F5F5F5;
+padding-left: 5%;
 }
 
 .links{
@@ -32,22 +34,20 @@ font-size: 20px;
 line-height: 23px;
 text-align: right;
 color: #CBC0FF;
+padding-right: 10%;
 }
 
-.textoF{
-    /* position: absolute;
-    left: 4.06%;
-    right: 70.8%;
-    top: 37.79%;
-    bottom: 45.89%; */
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.12vw;
-    line-height: 1.31vw;
-    color: #FFFFFF; 
-}
+
 
 .columna{
     flex:1;
+}
+.Logo2{ 
+  margin-top: 40%;
+margin-bottom: 10%;
+size: 30%;
+margin-left:  5%;
+padding-left: 10px;
+
+ 
 }

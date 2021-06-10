@@ -1,7 +1,7 @@
 import { Col, Row } from "jsxstyle";
 import React from "react";
 import "./Footer.css";
-import Logo from "../../assets/Logo.png";
+import Logo2 from "../../assets/Logo2.png";
 import instagram from "../../assets/instagram.png";
 import facebook from "../../assets/facebook.png"
 
@@ -10,12 +10,8 @@ const Footer = () => {
     <Col className="Todo">
       <Row flex="1" justifyContent="space-between">
         <Col className="columna" maxWidth="22.36vw">
-          <img src={Logo} alt="" className="icono" />
-          <div className="textoF">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
-          </div>
+          <img src={Logo2} alt="" className="Logo2" />
+         
           <div className="rsociales">
             <img src={instagram}></img>
             <img src={facebook}></img>
