@@ -7,60 +7,47 @@
    background-color: #d83d17;
    z-index: 1888888;
    position: absolute;
-   align-items: center;
+   border-radius: 1vw;
    justify-content: center;
 }
 
 .terminos{
-    
-  position:absolute;
-left: 1vw;
-margin: 1vw;
-bottom: 0vw;
-
-
 font-family: Roboto;
 font-style: normal;
 font-weight: 500;
 font-size: 20px;
 line-height: 23px;
-
 color: #F5F5F5;
 }
-.site
-{
-    
-position: absolute;
 
-right: 1vw;
-margin:1vw;
-bottom:0vw;
-
+.links{
+  padding: 0vw 1vw;
+}
+.site{
 /* h5 */
-
 font-family: Roboto;
 font-style: normal;
 font-weight: 500;
 font-size: 20px;
 line-height: 23px;
 text-align: right;
-
 color: #CBC0FF;
 }
 
 .textoF{
-
-    position: absolute;
+    /* position: absolute;
     left: 4.06%;
     right: 70.8%;
     top: 37.79%;
-    bottom: 45.89%;
-
+    bottom: 45.89%; */
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 1.12vw;
     line-height: 1.31vw;
-    
     color: #FFFFFF; 
+}
+
+.columna{
+    flex:1;
 }
