@@ -1,70 +1,57 @@
-import { Col, Row } from 'jsxstyle';
-import React from 'react';
-import './Footer.css';
+import { Col, Row } from "jsxstyle";
+import React from "react";
+import "./Footer.css";
+import Logo2 from "../../assets/Logo2.png";
+import instagram from "../../assets/instagram.png";
+import facebook from "../../assets/facebook.png"
 
-
-const Footer=()=>{
-return(
-    <Row className="Todo">
-        <Row >
-            <Col>
-            <img src="" alt="" className="icono" />
-            <div className="textoF">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
-            <div className="rsociales">
-                <img>
-                </img>
-                <img>
-                </img>
-            </div>
-            </Col>
-            
-            <Col>
-                    <Col>
-                        <Row>
-                            1
-                        </Row>
-                        <Row>
-                            2
-                        </Row>
-                        <Row>
-                            3
-                        </Row>  
-                    </Col>
-                    <Col>
-                        <Row>
-                            4
-                        </Row>
-                        <Row>
-                            5
-                        </Row>
-                        <Row>
-                            6
-                        </Row>  
-                    </Col>
-                    <Col>
-                        <Row>
-                            7
-                        </Row>
-                        <Row>
-                            8
-                        </Row>
-                        <Row>
-                            9
-                        </Row>  
-                    </Col>
-            </Col>
-        </Row>
-
-        <Row>
-            <p className="terminos">Terminos y Condiciones de uso | Politica de privacidad</p>
-        </Row>
-        <Row>
-           <p className="site">www.mangoverde.site</p>
-        </Row>
-
-
-    </Row>
-)
-}
+const Footer = () => {
+  return (
+    <Col className="Todo">
+      <Row flex="1" justifyContent="space-between">
+        <Col className="columna" maxWidth="22.36vw">
+          <img src={Logo2} alt="" className="Logo2" />
+         
+          <div className="rsociales">
+            <img src={instagram}></img>
+            <img src={facebook}></img>
+          </div>
+        </Col>
+        <Col className="columna" maxWidth="45.7vw">
+          <Col className="columna11">
+            <Row>Inicio</Row>
+            <Row>Contacto</Row>
+            <Row>Proyectos</Row>
+          </Col>
+          <Col className="columna12">
+            <Row>Servicios</Row>
+            <Row>Marketing</Row>
+            <Row>Brandings</Row>
+          </Col>
+          <Col className="columna13">
+            <Row>Social Media</Row>
+            <Row>
+              Desarrollo
+              <br />
+              WEB
+            </Row>
+        
+            <Row>
+              Desarrollo
+              <br />
+              SoftWare
+            </Row>
+          </Col>
+        </Col>
+      </Row>
+      <Row justifyContent="space-between" className="links">
+        <p className="terminos">
+          Terminos y Condiciones de uso | Politica de privacidad
+        </p>
+        <p className="site">www.mangoverde.site</p>
+      </Row>
+    </Col>
+  );
+};
 
 export default Footer;
