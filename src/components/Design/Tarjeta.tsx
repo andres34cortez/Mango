@@ -1,26 +1,22 @@
-import React from 'react';
-import './Tarjeta.css';
+import React from "react";
+import "./Tarjeta.css";
+import { Col } from "jsxstyle";
 
-interface Props{
-    imagen:string;
-    texto:string;
-    subtexto:string;
-    top:string;
-    left:string
+interface Props {
+  imagen: string;
+  title: string;
+  children: React.ReactNode;
 }
-const Button=(props:Props)=>{
-return(
 
-    <div className="Button" 
-    style={{
-        top:`${props.top}`,
-        left:`${props.left}`,
-        position:"absolute"
-    }}
-    >
-       <h1 className="texto"> {props.text}</h1>
-       <h3>Agenda una llamada para que podamos asesorarte</h3>
-    </div>
-)
+const Tarjeta = (props: Props) => {
+  return (
+    <Col className="tarjeta0">
+      <div className="backImagen">
+        <img src={props.imagen} alt="" className="imagen" />
+      </div>
+      <h1 className="title0">{props.title}</h1>
+      <div className="text">{props.children}</div>
+    </Col>
+  );
 };
-export default Button;
+export default Tarjeta;

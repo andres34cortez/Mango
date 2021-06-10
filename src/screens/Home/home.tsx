@@ -10,10 +10,15 @@ import Texto from "../../components/Design/Textos";
 import Banner from "../../components/Design/Banner";
 import Circle from "../../components/Design/Circulos";
 import Tarjeta1 from "../../components/Design/Tarjeta1";
+import Tarjeta from "../../components/Design/Tarjeta";
 
 import Agilidad from "../../assets/Agilidad.png";
 import Transparencia from "../../assets/transparencia.png";
 import Low from "../../assets/Low.png";
+
+import Marketing from "../../assets/Marketing.png";
+import Branding from "../../assets/Branding.png";
+import Desarrollo from "../../assets/Desarrollo.png";
 
 const Home = () => {
   return (
@@ -115,11 +120,13 @@ const Home = () => {
         Ayudanos a que tu marca despegue y suba de nivel
       </Texto>
       <Banner top="78vw" width="100vw" height="22.36vw" />
-      <Col paddingTop="101vw">
-        <Texto>
+      <Col alignItems="center" paddingTop="101vw">
+      <Row justifyContent="flex-end" style={{ marginLeft: "-13.5vw" }}>
+        <Texto  >
           ¿Por qué <br />
-          <span style={{ color: "#00FF66" }}>MANGO VERDE</span>?
+          <span style={{color: "#00FF66" }}>MANGO VERDE</span>?
         </Texto>
+        </Row>
         <Row paddingTop="11vw">
           <div style={{ marginRight: "2vw" }} />
           <Tarjeta1 imagen={Agilidad} title="Agilidad y Resultados">
@@ -139,6 +146,30 @@ const Home = () => {
             mas clientes porque por el tema de la pandemia quien te va a pagar
             $1000 mensuales y eso nos ha hecho tener muy buenos clientes...
           </Tarjeta1>
+        </Row>
+      </Col>
+
+
+      <Col alignItems="center">
+      <Row justifyContent="flex-end" style={{ marginLeft: "-13.5vw" }}>
+        <Texto  >
+          Servicios
+        </Texto>
+        </Row>
+        <Row paddingTop="11vw">
+          <div style={{ marginRight: "2vw" }} />
+          <Tarjeta imagen={Marketing} title="Marketing">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+
+          </Tarjeta>
+          <div style={{ marginRight: "4vw" }} />
+          <Tarjeta1 imagen={Branding} title="Branding">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+          </Tarjeta>
+          <div style={{ marginRight: "4vw" }} />
+          <Tarjeta imagen={Desarrollo} title="Desarrollo WEB">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+          </Tarjeta>
         </Row>
       </Col>
       <Circle
