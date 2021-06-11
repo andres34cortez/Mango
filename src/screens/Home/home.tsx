@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Col, Row, Box } from "jsxstyle";
 import "./home.css";
 import Ring from "../../components/Design/Ring";
@@ -138,26 +138,10 @@ const Circulos = () => {
     </Col>
   );
 };
-////////////////////////////////////// Modal //////////////////////////////////////////////
-const Modal = () => {
-  const [open, setOpen] = useState(true);
-  return (
-    <Dialog open={open} onClose={() => setOpen(false)}>
-      <Col zIndex={50000000000000000} backgroundColor="yellow">
-        <div>hola</div>
-        <div>hola</div>
-        <div>hola</div>
-        <div>hola</div>
-        <div>hola</div>
-        <div>hola</div>
-      </Col>
-    </Dialog>
-  );
-};
-////////////////////////////////////////////////////////////////////////////////////////////
+
 const Home = () => {
   //este estado es como que no anda pero no se porq
-  const [openModal, setOpenModal] = useState(true);
+  const [openModal, setOpenModal] = useState(false);
 
   return (
     <Col position="relative" display="block" marginTop="-3.5vw">
@@ -175,11 +159,25 @@ const Home = () => {
           text="Agendar"
           top="40vw"
           left="40vw"
-          onClick={() => setOpenModal(true)}
+          onClick={() => setOpenModal((o) => !o)}
         />
-        {/* ////////////////////////MODAL//////////////////////// */}
-        {openModal ? <Modal></Modal> : null}
-        {/* //////////////////////////////////////////////// */}
+        {/* /////////////////////MODAL///////////////////// */}
+        <Dialog open={openModal} onClose={() => setOpenModal(false)}>
+          <Col
+            zIndex={50000000000000}
+            backgroundColor="yellow"
+            height={600}
+            width={400}
+          >
+            <div>hola</div>
+            <div>hola</div>
+            <div>hola</div>
+            <div>hola</div>
+            <div>hola</div>
+            <div>hola</div>
+          </Col>
+        </Dialog>
+        {/* /////////////////////////////////////////////// */}
         <Banner top="78vw" width="100vw" height="22.36vw" />
         <Col paddingTop="101vw" alignItems="center">
           <Row justifyContent="flex-end" style={{ marginLeft: "-13.5vw" }}>
@@ -253,7 +251,7 @@ const Home = () => {
               </h2>
             </div>
             <Row style={{ paddingTop: "1.4vw" }} justifyContent="flex-end">
-              <Button text="Agendar" />
+              <Button text="Agendar" onClick={() => setOpenModal((o) => !o)} />
             </Row>
           </Col>
         </Row>

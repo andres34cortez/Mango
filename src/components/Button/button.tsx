@@ -11,6 +11,7 @@ const Button = (props: Props) => {
   return (
     <div
       className="Button"
+      onClick={props.onClick}
       style={{
         top: `${props.top}`,
         left: `${props.left}`,

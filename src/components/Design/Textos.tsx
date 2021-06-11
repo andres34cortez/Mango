@@ -15,7 +15,7 @@ const Texto = (props: Props) => {
       style={{
         top: `${props.top}`,
         left: `${props.left}`,
-        zIndex: 8888,
+        zIndex: 8,
         height: "11.18vw",
         width: "29.3vw",
         position: "absolute",
