@@ -159,6 +159,7 @@ const Home = () => {
           text="Agendar"
           top="40vw"
           left="40vw"
+          comentario="Agenda una llamada para que podamos asesorarte"
           onClick={() => setOpenModal((o) => !o)}
         />
         {/* /////////////////////MODAL///////////////////// */}
