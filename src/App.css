@@ -6,8 +6,7 @@
   flex: 1;
   width: 100vw;
   overflow-x: hidden;
-  z-index:-3;
-  
+  z-index: -3;
 }
 
 .App-logo {

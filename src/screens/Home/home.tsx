@@ -18,14 +18,14 @@ import Footer from "../../components/Design/Footer";
 import Marketing from "../../assets/Marketing.png";
 import Branding from "../../assets/Branding.png";
 import Desarrollo from "../../assets/Desarrollo.png";
-import Notas from "../../assets/Notas.png"
+import Notas from "../../assets/Notas.png";
 
-import a from "../../assets/1.png"
-import b from "../../assets/2.png"
-import c from "../../assets/3.png"
-import d from "../../assets/4.png"
-import e from "../../assets/5.png"
-import f from "../../assets/6.png"
+import a from "../../assets/1.png";
+import b from "../../assets/2.png";
+import c from "../../assets/3.png";
+import d from "../../assets/4.png";
+import e from "../../assets/5.png";
+import f from "../../assets/6.png";
 
 const Circulos = () => {
   return (
@@ -126,14 +126,13 @@ const Circulos = () => {
           left="50vw"
           opacity="0.2"
         />
-
         <Circle
-        width="100vw"
+          width="100vw"
           height="180vw"
           color="#5000FF"
           right="0"
           top="180vw"
-        ></Circle>
+        />
       </Box>
     </Col>
   );
@@ -141,18 +140,18 @@ const Circulos = () => {
 
 const Home = () => {
   return (
-    <Col position="relative" display="block">
+    <Col position="relative" display="block" marginTop="-3.5vw">
       <Circulos />
       <Col zIndex={1}>
         <Rectangulo />
-        <Button text="Agendar" top="43vw" left="38.25vw" />
         <Texto
           subtitulo="Con estategias de Branding,Marketing y el poder del Diseño"
-          top="21.6vw"
+          top="19.5vw"
           left="13.9vw"
         >
           Ayudanos a que tu marca despegue y suba de nivel
         </Texto>
+        <Button text="Agendar" top="40vw" left="40vw" />
         <Banner top="78vw" width="100vw" height="22.36vw" />
         <Col paddingTop="101vw" alignItems="center">
           <Row justifyContent="flex-end" style={{ marginLeft: "-13.5vw" }}>
@@ -210,40 +209,46 @@ const Home = () => {
         </Col>
         <Row
           justifyContent="center"
-          paddingTop='1vw'
-          alignItems='center'
+          paddingTop="1vw"
+          alignItems="center"
           zIndex={1}
         >
-          <img src={Notas} alt="" style={{height: '37vw'}}/>
-          <Col marginLeft="13.7vw" marginTop='-3vw'>
+          <img src={Notas} alt="" style={{ height: "37vw" }} />
+          <Col marginLeft="13.7vw" marginTop="-3vw">
             <div>
-              <h1 style={{margin: 0}}>Agenda tu <br/> Consulta</h1>
-              <h2 style={{margin: 0}}>Queremos ayudarte, agenda un meet <br /> y juntos lograremos alcanzar tus <br /> objetivos</h2>
+              <h1 style={{ margin: 0, paddingBottom: "1vw" }}>
+                Agenda tu <br /> Consulta
+              </h1>
+              <h2 style={{ margin: 0 }}>
+                Queremos ayudarte, agenda un meet <br /> y juntos lograremos
+                alcanzar tus <br /> objetivos
+              </h2>
             </div>
-            <Row style={{paddingTop: '1.1vw'}} justifyContent='flex-end'>
-            <Button text="Agendar" /></Row>
+            <Row style={{ paddingTop: "1.4vw" }} justifyContent="flex-end">
+              <Button text="Agendar" />
+            </Row>
           </Col>
         </Row>
-        <Col alignItems="center">
+        <Col alignItems="center" marginBottom="2vw">
           <Row justifyContent="flex-end" style={{ marginLeft: "-13.5vw" }}>
             <Texto>Clientes</Texto>
           </Row>
           <Row paddingTop="7vw" zIndex={1}>
             <div style={{ marginRight: "1vw" }} />
-           <div style={{maxHeight:"10,9vw"}}>
-             <div style={{padding:"1vw"}}>
-              <img src={a} style={{padding:"1vw" , height:"10,9vw"}} />
-              <img src={b}style={{padding:"1vw", height:"10,9vw"}} />
-              <img src={c}style={{padding:"1vw", height:"10,9vw"}} />
-            
-              <img src={d}style={{padding:"1vw", height:"10,9vw"}} />
-              <img src={e}style={{padding:"1vw", height:"10,9vw"}} />
-              <img src={f}style={{padding:"1vw", height:"10,9vw"}} />
+            <div style={{ maxHeight: "10,9vw" }}>
+              <div style={{ padding: "1vw" }}>
+                <img src={a} style={{ padding: "1vw", height: "10,9vw" }} />
+                <img src={b} style={{ padding: "1vw", height: "10,9vw" }} />
+                <img src={c} style={{ padding: "1vw", height: "10,9vw" }} />
+                <img src={d} style={{ padding: "1vw", height: "10,9vw" }} />
+                <img src={e} style={{ padding: "1vw", height: "10,9vw" }} />
+                <img src={f} style={{ padding: "1vw", height: "10,9vw" }} />
+              </div>
             </div>
-           </div>
           </Row>
         </Col>
         <Footer />
+        <Col paddingTop="4vw" />
       </Col>
     </Col>
   );
