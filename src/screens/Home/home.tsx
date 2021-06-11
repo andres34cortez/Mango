@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Col, Row, Box } from "jsxstyle";
 import "./home.css";
 import Ring from "../../components/Design/Ring";
@@ -26,6 +26,7 @@ import c from "../../assets/3.png";
 import d from "../../assets/4.png";
 import e from "../../assets/5.png";
 import f from "../../assets/6.png";
+import { Dialog } from "@material-ui/core";
 
 const Circulos = () => {
   return (
@@ -137,8 +138,27 @@ const Circulos = () => {
     </Col>
   );
 };
-
+////////////////////////////////////// Modal //////////////////////////////////////////////
+const Modal = () => {
+  const [open, setOpen] = useState(true);
+  return (
+    <Dialog open={open} onClose={() => setOpen(false)}>
+      <Col zIndex={50000000000000000} backgroundColor="yellow">
+        <div>hola</div>
+        <div>hola</div>
+        <div>hola</div>
+        <div>hola</div>
+        <div>hola</div>
+        <div>hola</div>
+      </Col>
+    </Dialog>
+  );
+};
+////////////////////////////////////////////////////////////////////////////////////////////
 const Home = () => {
+  //este estado es como que no anda pero no se porq
+  const [openModal, setOpenModal] = useState(true);
+
   return (
     <Col position="relative" display="block" marginTop="-3.5vw">
       <Circulos />
@@ -151,7 +171,15 @@ const Home = () => {
         >
           Ayudanos a que tu marca despegue y suba de nivel
         </Texto>
-        <Button text="Agendar" top="40vw" left="40vw" />
+        <Button
+          text="Agendar"
+          top="40vw"
+          left="40vw"
+          onClick={() => setOpenModal(true)}
+        />
+        {/* ////////////////////////MODAL//////////////////////// */}
+        {openModal ? <Modal></Modal> : null}
+        {/* //////////////////////////////////////////////// */}
         <Banner top="78vw" width="100vw" height="22.36vw" />
         <Col paddingTop="101vw" alignItems="center">
           <Row justifyContent="flex-end" style={{ marginLeft: "-13.5vw" }}>
