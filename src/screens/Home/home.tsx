@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Row, Box } from "jsxstyle";
-
+import "./home.css";
 import Ring from "../../components/Design/Ring";
 import Rectangulo from "../../components/Design/Rectangulo";
 import Button from "../../components/Button/button";
@@ -14,10 +14,19 @@ import Tarjeta from "../../components/Design/Tarjeta";
 import Agilidad from "../../assets/Agilidad.png";
 import Transparencia from "../../assets/transparencia.png";
 import Low from "../../assets/Low.png";
-
+import Footer from "../../components/Design/Footer";
 import Marketing from "../../assets/Marketing.png";
 import Branding from "../../assets/Branding.png";
 import Desarrollo from "../../assets/Desarrollo.png";
+import Notas from "../../assets/Notas.png"
+
+import a from "../../assets/1.png"
+import b from "../../assets/2.png"
+import c from "../../assets/3.png"
+import d from "../../assets/4.png"
+import e from "../../assets/5.png"
+import f from "../../assets/6.png"
+
 const Circulos = () => {
   return (
     <Col
@@ -27,8 +36,9 @@ const Circulos = () => {
       right={0}
       bottom={0}
       overflow="hidden"
+      zIndex={0}
     >
-      <Box position="relative" flex="1">
+      <Box position="relative" flex="1" zIndex={-1000000}>
         <CircleG
           width="75.69vw"
           height="75.69vw"
@@ -118,12 +128,12 @@ const Circulos = () => {
         />
 
         <Circle
-          width="105vw"
-          height="100%"
+        width="100vw"
+          height="180vw"
           color="#5000FF"
           right="0"
           top="180vw"
-        />
+        ></Circle>
       </Box>
     </Col>
   );
@@ -131,71 +141,110 @@ const Circulos = () => {
 
 const Home = () => {
   return (
-    <Col position="relative">
+    <Col position="relative" display="block">
       <Circulos />
-      <Rectangulo />
-      <Button text="Agendar" top="43vw" left="38.25vw" />
-      <Texto
-        subtitulo="Con estategias de Branding,Marketing y el poder del Diseño"
-        top="21.6vw"
-        left="13.9vw"
-      >
-        Ayudanos a que tu marca despegue y suba de nivel
-      </Texto>
-      <Banner top="78vw" width="100vw" height="22.36vw" />
-      <Col paddingTop="101vw" alignItems="center">
-        <Row justifyContent="flex-end" style={{ marginLeft: "-13.5vw" }}>
-          <Texto>
-            ¿Por qué <br />
-            <span style={{ color: "#00FF66" }}>MANGO VERDE</span>?
-          </Texto>
-        </Row>
-        <Row paddingTop="11vw" justifyContent="center">
-          <div style={{ marginRight: "2vw" }} />
-          <Tarjeta1 imagen={Agilidad} title="Agilidad y Resultados">
-            La agilidad y los buenos resultados nos han hecho que los clientes
-            nos prefieran la parte de la creación de campañas disruptivas ahi va
-            la clave de atraerles clientes y ventas altas eso es lo que les
-            gusta
-          </Tarjeta1>
-          <div style={{ marginRight: "4vw" }} />
-          <Tarjeta1 imagen={Transparencia} title="Transparencia">
-            Somos trasparentes a las personas les encanta que nosotros les
-            dejamos libre el presupuesto de su pauta pagada
-          </Tarjeta1>
-          <div style={{ marginRight: "4vw" }} />
-          <Tarjeta1 imagen={Low} title="Low budget">
-            Ofrecemos low budget en cosas de diseño que nos ha llegado a generar
-            mas clientes porque por el tema de la pandemia quien te va a pagar
-            $1000 mensuales y eso nos ha hecho tener muy buenos clientes...
-          </Tarjeta1>
-        </Row>
-      </Col>
-
-
-      <Col alignItems="center">
-      <Row justifyContent="flex-end" style={{ marginLeft: "-13.5vw" }}>
-        <Texto  >
-          Servicios
+      <Col zIndex={1}>
+        <Rectangulo />
+        <Button text="Agendar" top="43vw" left="38.25vw" />
+        <Texto
+          subtitulo="Con estategias de Branding,Marketing y el poder del Diseño"
+          top="21.6vw"
+          left="13.9vw"
+        >
+          Ayudanos a que tu marca despegue y suba de nivel
         </Texto>
+        <Banner top="78vw" width="100vw" height="22.36vw" />
+        <Col paddingTop="101vw" alignItems="center">
+          <Row justifyContent="flex-end" style={{ marginLeft: "-13.5vw" }}>
+            <Texto>
+              ¿Por qué <br />
+              <span style={{ color: "#00FF66" }}>MANGO VERDE</span>?
+            </Texto>
+          </Row>
+          <Row paddingTop="11vw" justifyContent="center">
+            <div style={{ marginRight: "2vw" }} />
+            <Tarjeta1 imagen={Agilidad} title="Agilidad y Resultados">
+              La agilidad y los buenos resultados nos han hecho que los clientes
+              nos prefieran la parte de la creación de campañas disruptivas ahi
+              va la clave de atraerles clientes y ventas altas eso es lo que les
+              gusta
+            </Tarjeta1>
+            <div style={{ marginRight: "4vw" }} />
+            <Tarjeta1 imagen={Transparencia} title="Transparencia">
+              Somos trasparentes a las personas les encanta que nosotros les
+              dejamos libre el presupuesto de su pauta pagada
+            </Tarjeta1>
+            <div style={{ marginRight: "4vw" }} />
+            <Tarjeta1 imagen={Low} title="Low budget">
+              Ofrecemos low budget en cosas de diseño que nos ha llegado a
+              generar mas clientes porque por el tema de la pandemia quien te va
+              a pagar $1000 mensuales y eso nos ha hecho tener muy buenos
+              clientes...
+            </Tarjeta1>
+          </Row>
+        </Col>
+        <Col alignItems="center">
+          <Row justifyContent="flex-end" style={{ marginLeft: "-13.5vw" }}>
+            <Texto>Servicios</Texto>
+          </Row>
+          <Row paddingTop="11vw">
+            <div style={{ marginRight: "2vw" }} />
+            <Tarjeta imagen={Marketing} title="Marketing">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </Tarjeta>
+            <div style={{ marginRight: "4vw" }} />
+            <Tarjeta imagen={Branding} title="Branding">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </Tarjeta>
+            <div style={{ marginRight: "4vw" }} />
+            <Tarjeta imagen={Desarrollo} title="Desarrollo WEB">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </Tarjeta>
+          </Row>
+        </Col>
+        <Row
+          justifyContent="center"
+          paddingTop='1vw'
+          alignItems='center'
+          zIndex={1}
+        >
+          <img src={Notas} alt="" style={{height: '37vw'}}/>
+          <Col marginLeft="13.7vw" marginTop='-3vw'>
+            <div>
+              <h1 style={{margin: 0}}>Agenda tu <br/> Consulta</h1>
+              <h2 style={{margin: 0}}>Queremos ayudarte, agenda un meet <br /> y juntos lograremos alcanzar tus <br /> objetivos</h2>
+            </div>
+            <Row style={{paddingTop: '1.1vw'}} justifyContent='flex-end'>
+            <Button text="Agendar" /></Row>
+          </Col>
         </Row>
-        <Row paddingTop="11vw">
-          <div style={{ marginRight: "2vw" }} />
-          <Tarjeta imagen={Marketing} title="Marketing">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-
-          </Tarjeta>
-          <div style={{ marginRight: "4vw" }} />
-          <Tarjeta imagen={Branding} title="Branding">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-          </Tarjeta>
-          <div style={{ marginRight: "4vw" }} />
-          <Tarjeta imagen={Desarrollo} title="Desarrollo WEB">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-          </Tarjeta>
-        </Row>
+        <Col alignItems="center">
+          <Row justifyContent="flex-end" style={{ marginLeft: "-13.5vw" }}>
+            <Texto>Clientes</Texto>
+          </Row>
+          <Row paddingTop="7vw" zIndex={1}>
+            <div style={{ marginRight: "1vw" }} />
+           <div style={{maxHeight:"10,9vw"}}>
+             <div style={{padding:"1vw"}}>
+              <img src={a} style={{padding:"1vw" , height:"10,9vw"}} />
+              <img src={b}style={{padding:"1vw", height:"10,9vw"}} />
+              <img src={c}style={{padding:"1vw", height:"10,9vw"}} />
+            
+              <img src={d}style={{padding:"1vw", height:"10,9vw"}} />
+              <img src={e}style={{padding:"1vw", height:"10,9vw"}} />
+              <img src={f}style={{padding:"1vw", height:"10,9vw"}} />
+            </div>
+           </div>
+          </Row>
+        </Col>
+        <Footer />
       </Col>
-    
     </Col>
   );
 };

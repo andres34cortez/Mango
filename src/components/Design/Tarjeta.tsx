@@ -11,11 +11,11 @@ interface Props {
 const Tarjeta = (props: Props) => {
   return (
     <Col className="tarjeta0">
-      <div className="backImagen">
-        <img src={props.imagen} alt="" className="imagen" />
+      <div className="backImagen0">
+        <img src={props.imagen} alt="" className="imagen0" />
       </div>
       <h1 className="title0">{props.title}</h1>
-      <div className="text">{props.children}</div>
+      <div className="text0">{props.children}</div>
     </Col>
   );
 };

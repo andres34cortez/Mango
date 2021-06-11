@@ -3,8 +3,8 @@ import './button.css';
 
 interface Props{
     text:string;
-    top:string;
-    left:string;
+    top?:string;
+    left?:string;
 }
 const Button=(props:Props)=>{
 return(

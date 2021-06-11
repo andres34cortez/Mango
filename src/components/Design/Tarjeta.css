@@ -6,14 +6,14 @@
     background-color: #1b007f;
   }
   
-  .imagen {
-    height: 8.33vw;
-    width: 8.33vw;
+  .imagen0 {
+  
+    width: 100%;
   }
   
-  .backImagen {
+  .backImagen0 {
     width: 100%;
-    height: 13.2vw;
+    
     border-top-left-radius: 1.04vw;
     border-top-right-radius: 1.04vw;
     display: flex;
@@ -23,6 +23,8 @@
   }
   
   .title0 {
+    padding-top:3vh ;
+    padding-bottom:3vh ;
     font-family: "Roboto";
     font-size: 1.3vw;
     line-height: 1.4vw;
@@ -32,7 +34,7 @@
     padding-left: 1.5vw;
   }
   
-  .text {
+  .text0 {
     font-family: "Roboto";
     font-size: 0.8vw;
     font-weight: normal;

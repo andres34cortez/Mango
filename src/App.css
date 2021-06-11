@@ -3,10 +3,11 @@
   background-color: #14003f;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  flex: 1;
   width: 100vw;
   overflow-x: hidden;
-  position: relative;
+  z-index:-3;
+  
 }
 
 .App-logo {

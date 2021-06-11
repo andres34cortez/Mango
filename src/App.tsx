@@ -9,9 +9,8 @@ import Servicios from "./screens/Services/services";
 import Home from "./screens/Home/home";
 
 function App() {
-  const [route, setRoute] = useState(`/`);
-  const match = useRouteMatch();
 
+  
   return (
     <div className="App">
       <NavBar />
@@ -20,7 +19,7 @@ function App() {
         <Route exact path="/servicios" component={Servicios} />
         <Route exact path="/contacto" component={Contacto} />
       </Switch>
-      <Footer />
+      
     </div>
   );
 }

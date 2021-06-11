@@ -4,6 +4,7 @@
   border-radius: 1.04vw;
   flex-wrap: wrap;
   background-color: #1b007f;
+  z-index: 10;
 }
 
 .imagen {
