@@ -1,7 +1,7 @@
 import React from "react";
 import Rocket from "../../assets/Rocket.png";
 import { Row, Col, Box } from "jsxstyle";
-import Ring from "../../components/Design/Ring.tsx"
+import Ring from "../../components/Design/Ring"
 
 interface Props {
   width: string;
