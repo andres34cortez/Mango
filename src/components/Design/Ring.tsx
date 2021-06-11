@@ -5,7 +5,8 @@ interface Props {
   width: string;
   height: string;
   border: string;
-  position?: string;
+  /* @ts-ignore */
+  position: "absolute"|"relative";
   left?: string;
   top?: string;
   opacity?:string;
@@ -19,6 +20,7 @@ const Circle = (props: Props) => {
         width: `${props.width}`,
         height: `${props.height}`,
         border: `${props.border}`,
+        /* @ts-ignore */
         position: `${props.position}`,
         left: `${props.left}`,
         top: `${props.top}`,
