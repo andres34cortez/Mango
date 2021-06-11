@@ -1,4 +1,5 @@
 import React from "react";
+import { Col } from "jsxstyle";
 import "./button.css";
 
 interface Props {
@@ -10,18 +11,18 @@ interface Props {
 }
 const Button = (props: Props) => {
   return (
-    <div
-      className="Button"
-      onClick={props.onClick}
+    <Col
       style={{
         top: `${props.top}`,
         left: `${props.left}`,
         position: "absolute",
       }}
     >
-      <h1 className="texto"> {props.text}</h1>
+      <div className="Button" onClick={props.onClick}>
+        <h1 className="texto"> {props.text}</h1>
+      </div>
       <h3>{props.comentario}</h3>
-    </div>
+    </Col>
   );
 };
 export default Button;

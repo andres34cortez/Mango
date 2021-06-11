@@ -7,13 +7,15 @@
   padding-bottom: 1.3vw;
   background: #00ff66;
   width: 10.97vw;
-
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 0.6vw;
 }
+.Button:hover {
+  background: #00ff66ea;
+}
+
 .texto {
   margin: 0px;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -26,7 +28,6 @@ h3 {
   position: absolute;
   width: 10.97vw;
   height: 2vw;
-
   top: 3.5vw;
 
   /* P1 */
@@ -37,6 +38,5 @@ h3 {
   font-size: 0.85vw;
   line-height: 1vw;
   text-align: center;
-
   color: #f5f5f5;
 }
