@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Col, Row, Box } from "jsxstyle";
 import "./home.css";
+import '../../components/Design/ModalContacto.css'
 import Ring from "../../components/Design/Ring";
 import Rectangulo from "../../components/Design/Rectangulo";
 import Button from "../../components/Button/button";
@@ -26,7 +27,30 @@ import c from "../../assets/3.png";
 import d from "../../assets/4.png";
 import e from "../../assets/5.png";
 import f from "../../assets/6.png";
+
 import { Dialog } from "@material-ui/core";
+import {
+  createMuiTheme,
+  ThemeProvider,
+  createStyles,
+  Theme,
+  makeStyles,
+} from '@material-ui/core/styles'
+
+const dialog = createMuiTheme({
+  overrides: {
+    MuiDialog: {
+      paper: {
+        borderRadius: 10,
+        fontFamily: 'Public Sans',
+      },
+      paperWidthMd: {
+        maxWidth: 1100,
+        fontFamily: 'Public Sans',
+      },
+    },
+  },
+})
 
 const Circulos = () => {
   return (
@@ -164,18 +188,23 @@ const Home = () => {
         />
         {/* /////////////////////MODAL///////////////////// */}
         <Dialog open={openModal} onClose={() => setOpenModal(false)}>
-          <Col
-            zIndex={50000000000000}
-            backgroundColor="yellow"
-            height={600}
-            width={400}
-          >
-            <div>hola</div>
-            <div>hola</div>
-            <div>hola</div>
-            <div>hola</div>
-            <div>hola</div>
-            <div>hola</div>
+          <Col className="contenedor1">
+            <Col className="contenedor2">
+              <input className="input" type="text" placeholder="Nombre" />
+              <input className="input" type="email" placeholder="Correo" />
+              <input className="input2" type="text" placeholder="Fecha D/M/A" />
+              <input className="input2" type="text" placeholder="Hora" />
+              <Row
+                alignItems="center"
+                alignSelf="flex-start"
+                paddingTop="0.7vw"
+                paddingLeft="0.4vw"
+              >
+                <input type="checkbox" className="checkBox" />
+                <div className="checkText"> Acepto los Terminos y<br/> condiciones</div>
+              </Row>
+              <Button text="Enviar" left="51.3vw" top="43.5vw"/>
+            </Col>
           </Col>
         </Dialog>
         {/* /////////////////////////////////////////////// */}
