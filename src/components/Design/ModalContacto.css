@@ -1,0 +1,27 @@
+.contenedor1{
+    width:41vw ;
+    height:40vw ;
+    background-color: #1B007F; 
+    padding:3.54vw 2.36vw ;
+}
+.contenedor2{
+   
+  
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    
+}
+.input{
+    min-width: 35.28vw;
+    min-height: 4.44vw;
+    margin: 0.5vw;
+    border-radius: 1vw;
+    background: rgba(203, 192, 255, 0.3);
+    padding-left: 1.5vw;
+}
+.box{
+    min-width: 35.25vw;
+    min-height: 11.8vw;
+
+}
