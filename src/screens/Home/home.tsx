@@ -222,21 +222,17 @@ const Home = () => {
           <Row paddingTop="11vw">
             <div style={{ marginRight: "2vw" }} />
             <Tarjeta imagen={Marketing} title="Marketing">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
+            Consigue más clientes y genera contenido de valor en las diferentes plataformas con nuestro servicio de Marketing Digital.
             </Tarjeta>
             <div style={{ marginRight: "4vw" }} />
             <Tarjeta imagen={Branding} title="Branding">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
+            ¿Buscando renovar o iniciar tu marca? Contrata nuestro servicio de branding o creación de marcas. Hacemos mucho más que un logotipo.
+
             </Tarjeta>
             <div style={{ marginRight: "4vw" }} />
             <Tarjeta imagen={Desarrollo} title="Desarrollo WEB">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
+            Sabemos que debes tener presencia en la web, diseñamos y desarrollamos tu web, sin utilizar plantillas. 
+
             </Tarjeta>
           </Row>
         </Col>
