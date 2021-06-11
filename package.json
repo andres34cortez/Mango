@@ -1,6 +1,7 @@
 {
   "name": "MangoVerde",
   "version": "0.0.0",
+  "homepage": "www.mangoverde.site",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build"
