@@ -3,6 +3,7 @@ import "./button.css";
 
 interface Props {
   text?: string;
+  comentario?: string;
   top?: string;
   left?: string;
   onClick?: () => void;
@@ -11,6 +12,7 @@ const Button = (props: Props) => {
   return (
     <div
       className="Button"
+      onClick={props.onClick}
       style={{
         top: `${props.top}`,
         left: `${props.left}`,
@@ -18,7 +20,7 @@ const Button = (props: Props) => {
       }}
     >
       <h1 className="texto"> {props.text}</h1>
-      <h3>Agenda una llamada para que podamos asesorarte</h3>
+      <h3>{props.comentario}</h3>
     </div>
   );
 };
