@@ -37,7 +37,7 @@ const Banner = (props: Props) => {
       </Row>
       <Row>
         <Texto
-          subtitulo="Somos una agencia de Marketing Digital, enfocada en ayudar a nuestros clientes a despegar sus emprendimientos y llevar su empresa al siguiente nivel!"
+          subtitulo="¡Nuestro enfoque es ayudar a nuestros clientes a despegar sus negocios y llevar su empresa al siguiente nivel, somos más que una agencia de Marketing Digital!"
           top="77vw"
           left="13.9vw"
           efecto=""

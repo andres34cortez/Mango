@@ -64,20 +64,20 @@ const Circulos = () => {
           top="-9.25vw"
         />
         <Ring
-          width="8vw"
-          height="8vw"
+          width="7vw"
+          height="7vw"
           border="2vw solid #F5F5F5"
           position="absolute"
           top="4vw"
           left="2vw"
         />
         <Ring
-          width="3vw"
-          height="3vw"
+          width="2.5vw"
+          height="2.5vw"
           border="1vw solid #F5F5F5"
           position="absolute"
-          top="15vw"
-          left="17vw"
+          top="13vw"
+          left="16vw"
           opacity="1"
         />
         <Ring
@@ -144,11 +144,12 @@ const Circulos = () => {
           opacity="0.2"
         />
         <Circle
-          width="100vw"
-          height="180vw"
+          width="150vw"
+          height="300vw"
           color="#5000FF"
-          right="0"
-          top="180vw"
+          right="-25vw"
+          
+          top="160vw"
         />
       </Box>
     </Col>
@@ -166,14 +167,14 @@ const Home = () => {
         <Rectangulo />
         <Texto
           subtitulo="Con estategias de Branding,Marketing y el poder del Diseño"
-          top="19.5vw"
+          top="18vw"
           left="13.9vw"
         >
           Ayudanos a que tu marca despegue y suba de nivel
         </Texto>
         <Button
           text="Agendar"
-          top="40vw"
+          top="38.5vw"
           left="40vw"
           comentario="Agenda un meet para que podamos asesorarte"
           onClick={() => setOpenModal((o) => !o)}
@@ -193,7 +194,7 @@ const Home = () => {
               <span style={{ color: "#00FF66" }}>MANGO VERDE</span>?
             </Texto>
           </Row>
-          <Row paddingTop="11vw" justifyContent="center">
+          <Row paddingTop="11vw" justifyContent="center" >
             <div style={{ marginRight: "2vw" }} />
             <Tarjeta1 imagen={Agilidad} title="Agilidad y Resultados">
             Sabemos que estás buscando atraer más clientes y conseguir subir tus ventas, la agilidad de nuestros servicios y la creación de campañas disruptivas han brindado buenos resultados a nuestros clientes. 
@@ -213,7 +214,7 @@ const Home = () => {
           <Row justifyContent="flex-end" style={{ marginLeft: "-13.5vw" }}>
             <Texto>Servicios</Texto>
           </Row>
-          <Row paddingTop="11vw">
+          <Row paddingTop="11vw" zIndex={10}>
             <div style={{ marginRight: "2vw" }} />
             <Tarjeta imagen={Marketing} title="Marketing">
             Consigue más clientes y genera contenido de valor en las diferentes plataformas con nuestro servicio de Marketing Digital.
@@ -253,7 +254,7 @@ const Home = () => {
           </Col>
         </Row>
         <Col alignItems="center" marginBottom="2vw">
-          <Row justifyContent="flex-end" style={{ marginLeft: "-13.5vw" }}>
+          <Row justifyContent="flex-end" paddingTop="5vw" style={{ marginLeft: "-.5vw" }}>
             <Texto>Clientes</Texto>
           </Row>
           <Row paddingTop="7vw" zIndex={1}>
