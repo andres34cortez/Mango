@@ -70,41 +70,31 @@ const Servicios = () => {
           <Row paddingTop="11vw">
             <div style={{ marginRight: "2vw" }} />
             <Tarjeta imagen={Marketing} title="Marketing">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
+            Consigue más clientes y genera contenido de valor en las diferentes plataformas con nuestro servicio de Marketing Digital.
             </Tarjeta>
             <div style={{ marginRight: "4vw" }} />
             <Tarjeta imagen={Branding} title="Branding">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
+            ¿Buscando renovar o iniciar tu marca? Contrata nuestro servicio de branding o creación de marcas. Hacemos mucho más que un logotipo.
+
             </Tarjeta>
             <div style={{ marginRight: "4vw" }} />
             <Tarjeta imagen={Desarrollo} title="Desarrollo WEB">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
+            Sabemos que debes tener presencia en la web, diseñamos y desarrollamos tu web, sin utilizar plantillas. 
+
             </Tarjeta>
           </Row>
           <Row paddingTop="3vw">
             <div style={{ marginRight: "2vw" }} />
             <Tarjeta imagen={Social} title="Social">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
+            Creamos y mantenemos la presencia de tu marca en redes sociales. Encuentra tu cliente potencial y llega a el gracias a tu estrategia de social media.
             </Tarjeta>
             <div style={{ marginRight: "4vw" }} />
             <Tarjeta imagen={Rebranding} title="Branding">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
+            La imagen de tu marca habla más que mil palabras. Diseñamos tu logotipo, línea gráfica y más. Te ayudamos a darle identidad y adn a tu marca.
             </Tarjeta>
             <div style={{ marginRight: "4vw" }} />
             <Tarjeta imagen={Desarrollo2} title="Desarrollo APPs">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
+            Le damos vida a tus ideas, desarrollamos tu app desde la experiencia de usuario hasta la optimizacion back end. Somos expertos en lo que hacemos, confía tus apps en nuestras manos.
             </Tarjeta>
           </Row>
         </Col>

@@ -19,13 +19,13 @@ import Footer from "../../components/Design/Footer";
 import Marketing from "../../assets/Marketing.png";
 import Branding from "../../assets/Branding.png";
 import Desarrollo from "../../assets/Desarrollo.png";
-import Notas from "../../assets/Notas.png";
+import Notas from "../../assets/Telefono.png";
 
 import a from "../../assets/1.png";
-import b from "../../assets/2.png";
-import c from "../../assets/3.png";
-import d from "../../assets/4.png";
-import e from "../../assets/5.png";
+import b from "../../assets/2b.png";
+import c from "../../assets/3b.png";
+import d from "../../assets/4b.png";
+
 import f from "../../assets/6.png";
 
 import { Dialog } from "@material-ui/core";
@@ -196,22 +196,16 @@ const Home = () => {
           <Row paddingTop="11vw" justifyContent="center">
             <div style={{ marginRight: "2vw" }} />
             <Tarjeta1 imagen={Agilidad} title="Agilidad y Resultados">
-              La agilidad y los buenos resultados nos han hecho que los clientes
-              nos prefieran la parte de la creación de campañas disruptivas ahi
-              va la clave de atraerles clientes y ventas altas eso es lo que les
-              gusta
+            Sabemos que estás buscando atraer más clientes y conseguir subir tus ventas, la agilidad de nuestros servicios y la creación de campañas disruptivas han brindado buenos resultados a nuestros clientes. 
             </Tarjeta1>
             <div style={{ marginRight: "4vw" }} />
             <Tarjeta1 imagen={Transparencia} title="Transparencia">
-              Somos trasparentes a las personas les encanta que nosotros les
-              dejamos libre el presupuesto de su pauta pagada
+            La transparencia con nuestros clientes es uno de nuestros más grandes diferenciadores. Sabemos que tu también debes tener el control de tus pagos en social media y resultados 100% reales.
+
             </Tarjeta1>
             <div style={{ marginRight: "4vw" }} />
             <Tarjeta1 imagen={Low} title="Low budget">
-              Ofrecemos low budget en cosas de diseño que nos ha llegado a
-              generar mas clientes porque por el tema de la pandemia quien te va
-              a pagar $1000 mensuales y eso nos ha hecho tener muy buenos
-              clientes...
+            Entendemos tus necesidades, vamos contigo de la mano, apoyandote y ayudandote a tener una marca de nivel y generar más clientes. Adaptandonos a tu presupuesto.
             </Tarjeta1>
           </Row>
         </Col>
@@ -242,8 +236,8 @@ const Home = () => {
           alignItems="center"
           zIndex={1}
         >
-          <img src={Notas} alt="" style={{ height: "37vw" }} />
-          <Col marginLeft="13.7vw" marginTop="-3vw">
+          <img src={Notas} alt="" style={{ height: "25vw" }} />
+          <Col marginLeft="11.7vw" marginTop="-3vw">
             <div>
               <h1 style={{ margin: 0, paddingBottom: "1vw" }}>
                 Agenda tu <br /> Consulta
@@ -266,11 +260,11 @@ const Home = () => {
             <div style={{ marginRight: "1vw" }} />
             <div style={{ maxHeight: "10,9vw" }}>
               <div style={{ padding: "1vw" }}>
-                <img src={a} style={{ padding: "1vw", height: "10,9vw" }} />
+                <img src={a} style={{ padding: "1vw",maxHeight: "10,9vw" }} />
                 <img src={b} style={{ padding: "1vw", height: "10,9vw" }} />
                 <img src={c} style={{ padding: "1vw", height: "10,9vw" }} />
                 <img src={d} style={{ padding: "1vw", height: "10,9vw" }} />
-                <img src={e} style={{ padding: "1vw", height: "10,9vw" }} />
+               
                 <img src={f} style={{ padding: "1vw", height: "10,9vw" }} />
               </div>
             </div>

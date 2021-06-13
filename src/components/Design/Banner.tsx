@@ -1,5 +1,5 @@
 import React from "react";
-import Pantalla from "../../assets/Pantalla.png";
+import Pantalla from "../../assets/Mega.png";
 import { Row, Col, Box } from "jsxstyle";
 import Texto from "./Textos";
 
@@ -33,7 +33,7 @@ const Banner = (props: Props) => {
           left: "50.62vw",
         }}
       >
-        <img src={Pantalla} style={{ width: "45vw" }} />
+        <img src={Pantalla} style={{ margin:"1.8vw",width: "38vw" }} />
       </Row>
       <Row>
         <Texto
