@@ -166,7 +166,7 @@ const Home = () => {
       <Col zIndex={1}>
         <Rectangulo />
         <Texto
-          subtitulo="Con estategias de Branding,Marketing y el poder del Diseño"
+          subtitulo="Con estrategias de Branding,Marketing y el poder del Diseño"
           top="18vw"
           left="13.9vw"
         >
