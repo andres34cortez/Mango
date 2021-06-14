@@ -265,7 +265,6 @@ const Home = () => {
                 <img src={b} style={{ padding: "1vw", height: "10,9vw" }} />
                 <img src={c} style={{ padding: "1vw", height: "10,9vw" }} />
                 <img src={d} style={{ padding: "1vw", height: "10,9vw" }} />
-               
                 <img src={f} style={{ padding: "1vw", height: "10,9vw" }} />
               </div>
             </div>
