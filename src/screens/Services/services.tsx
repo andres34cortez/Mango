@@ -67,7 +67,7 @@ const Servicios = () => {
           <Row justifyContent="flex-end" style={{ marginLeft: "-13.5vw" }}>
             <Texto>Servicios</Texto>
           </Row>
-          <Row paddingTop="11vw">
+          <Row paddingTop="10vw">
             <div style={{ marginRight: "2vw" }} />
             <Tarjeta imagen={Marketing} title="Marketing">
             Consigue más clientes y genera contenido de valor en las diferentes plataformas con nuestro servicio de Marketing Digital.
@@ -85,7 +85,7 @@ const Servicios = () => {
           </Row>
           <Row paddingTop="3vw">
             <div style={{ marginRight: "2vw" }} />
-            <Tarjeta imagen={Social} title="Social">
+            <Tarjeta imagen={Social} title="Social" >
             Creamos y mantenemos la presencia de tu marca en redes sociales. Encuentra tu cliente potencial y llega a el gracias a tu estrategia de social media.
             </Tarjeta>
             <div style={{ marginRight: "4vw" }} />

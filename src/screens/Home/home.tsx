@@ -167,14 +167,14 @@ const Home = () => {
         <Rectangulo />
         <Texto
           subtitulo="Con estrategias de Branding,Marketing y el poder del Diseño"
-          top="18vw"
+          top="16vw"
           left="13.9vw"
         >
-          Ayudanos a que tu marca despegue y suba de nivel
+          Juntos hacemos que tu marca despegue y suba de nivel
         </Texto>
         <Button
           text="Agendar"
-          top="38.5vw"
+          top="41vw"
           left="40vw"
           comentario="Agenda un meet para que podamos asesorarte"
           onClick={() => setOpenModal((o) => !o)}

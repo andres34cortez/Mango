@@ -2,7 +2,13 @@
   background-color: #1b007f;
   padding: 2.5vw 2vw 8vw;
   font-family: Roboto;
-  border-radius: 1vw;
+  border-radius: 1px;
+}
+.contenedorC {
+  background-color: #1b007f;
+  padding: 2.5vw 2vw 8vw;
+  font-family: Roboto;
+  border-radius: 20px;
 }
 .contenedor2 {
   flex: 1;
