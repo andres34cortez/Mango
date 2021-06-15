@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Col, Row, Box } from "jsxstyle";
 import "./home.css";
+
 import Ring from "../../components/Design/Ring";
 import Rectangulo from "../../components/Design/Rectangulo";
 import Button from "../../components/Button/button";
@@ -148,7 +149,6 @@ const Circulos = () => {
           height="300vw"
           color="#5000FF"
           right="-25vw"
-          
           top="160vw"
         />
       </Box>
@@ -194,19 +194,25 @@ const Home = () => {
               <span style={{ color: "#00FF66" }}>MANGO VERDE</span>?
             </Texto>
           </Row>
-          <Row paddingTop="11vw" justifyContent="center" >
+          <Row paddingTop="11vw" justifyContent="center">
             <div style={{ marginRight: "2vw" }} />
             <Tarjeta1 imagen={Agilidad} title="Agilidad y Resultados">
-            Sabemos que estás buscando atraer más clientes y conseguir subir tus ventas, la agilidad de nuestros servicios y la creación de campañas disruptivas han brindado buenos resultados a nuestros clientes. 
+              Sabemos que estás buscando atraer más clientes y conseguir subir
+              tus ventas, la agilidad de nuestros servicios y la creación de
+              campañas disruptivas han brindado buenos resultados a nuestros
+              clientes.
             </Tarjeta1>
             <div style={{ marginRight: "4vw" }} />
             <Tarjeta1 imagen={Transparencia} title="Transparencia">
-            La transparencia con nuestros clientes es uno de nuestros más grandes diferenciadores. Sabemos que tu también debes tener el control de tus pagos en social media y resultados 100% reales.
-
+              La transparencia con nuestros clientes es uno de nuestros más
+              grandes diferenciadores. Sabemos que tu también debes tener el
+              control de tus pagos en social media y resultados 100% reales.
             </Tarjeta1>
             <div style={{ marginRight: "4vw" }} />
             <Tarjeta1 imagen={Low} title="Low budget">
-            Entendemos tus necesidades, vamos contigo de la mano, apoyandote y ayudandote a tener una marca de nivel y generar más clientes. Adaptandonos a tu presupuesto.
+              Entendemos tus necesidades, vamos contigo de la mano, apoyandote y
+              ayudandote a tener una marca de nivel y generar más clientes.
+              Adaptandonos a tu presupuesto.
             </Tarjeta1>
           </Row>
         </Col>
@@ -217,17 +223,18 @@ const Home = () => {
           <Row paddingTop="11vw" zIndex={10}>
             <div style={{ marginRight: "2vw" }} />
             <Tarjeta imagen={Marketing} title="Marketing">
-            Consigue más clientes y genera contenido de valor en las diferentes plataformas con nuestro servicio de Marketing Digital.
+              Consigue más clientes y genera contenido de valor en las
+              diferentes plataformas con nuestro servicio de Marketing Digital.
             </Tarjeta>
             <div style={{ marginRight: "4vw" }} />
             <Tarjeta imagen={Branding} title="Branding">
-            ¿Buscando renovar o iniciar tu marca? Contrata nuestro servicio de branding o creación de marcas. Hacemos mucho más que un logotipo.
-
+              ¿Buscando renovar o iniciar tu marca? Contrata nuestro servicio de
+              branding o creación de marcas. Hacemos mucho más que un logotipo.
             </Tarjeta>
             <div style={{ marginRight: "4vw" }} />
             <Tarjeta imagen={Desarrollo} title="Desarrollo WEB">
-            Sabemos que debes tener presencia en la web, diseñamos y desarrollamos tu web, sin utilizar plantillas. 
-
+              Sabemos que debes tener presencia en la web, diseñamos y
+              desarrollamos tu web, sin utilizar plantillas.
             </Tarjeta>
           </Row>
         </Col>
@@ -254,14 +261,18 @@ const Home = () => {
           </Col>
         </Row>
         <Col alignItems="center" marginBottom="2vw">
-          <Row justifyContent="flex-end" paddingTop="5vw" style={{ marginLeft: "-.5vw" }}>
+          <Row
+            justifyContent="flex-end"
+            paddingTop="5vw"
+            style={{ marginLeft: "-.5vw" }}
+          >
             <Texto>Clientes</Texto>
           </Row>
           <Row paddingTop="7vw" zIndex={1}>
             <div style={{ marginRight: "1vw" }} />
             <div style={{ maxHeight: "10,9vw" }}>
               <div style={{ padding: "1vw" }}>
-                <img src={a} style={{ padding: "1vw",maxHeight: "10,9vw" }} />
+                <img src={a} style={{ padding: "1vw", maxHeight: "10,9vw" }} />
                 <img src={b} style={{ padding: "1vw", height: "10,9vw" }} />
                 <img src={c} style={{ padding: "1vw", height: "10,9vw" }} />
                 <img src={d} style={{ padding: "1vw", height: "10,9vw" }} />
