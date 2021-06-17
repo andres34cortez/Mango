@@ -28,7 +28,7 @@ import c from "../../assets/3b.png";
 import d from "../../assets/4b.png";
 
 import f from "../../assets/6.png";
-
+import useMediaQuery from "../../components/MediaQuery";
 import { Dialog } from "@material-ui/core";
 // import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 
@@ -46,6 +46,8 @@ import { Dialog } from "@material-ui/core";
 // });
 
 const Circulos = () => {
+  
+  const mobile=useMediaQuery('(max-width:768px)');
   return (
     <Col
       position="absolute"
@@ -57,13 +59,21 @@ const Circulos = () => {
       zIndex={0}
     >
       <Box position="relative" flex="1" zIndex={-1000000}>
-        <CircleG
+        {mobile? (<CircleG
+          width="97vw"
+          height="97vw"
+          color="#1B007F"
+          right="-20.22vw"
+          top="40vw"
+        /> ):(<CircleG
           width="75.69vw"
           height="75.69vw"
           color="#1B007F"
           right="-10.22vw"
           top="-9.25vw"
-        />
+        />)}
+       
+        {mobile? null : (
         <Ring
           width="7vw"
           height="7vw"
@@ -71,7 +81,8 @@ const Circulos = () => {
           position="absolute"
           top="4vw"
           left="2vw"
-        />
+        />)}
+         {mobile? null : (
         <Ring
           width="2.5vw"
           height="2.5vw"
@@ -81,6 +92,14 @@ const Circulos = () => {
           left="16vw"
           opacity="1"
         />
+        )}
+         {mobile? (<Ring  width="50vw"
+         height="50vw"
+         border="15vw solid #6E4DB2"
+         position="absolute"
+         top="200vw"
+         left="-10vw"
+         opacity="0.3" />):( 
         <Ring
           width="23vw"
           height="23vw"
@@ -89,7 +108,14 @@ const Circulos = () => {
           top="75vw"
           left="-1.25vw"
           opacity="0.1"
-        />
+        />)}
+         {mobile? (<Ring  width="50vw"
+         height="50vw"
+         border="15vw solid #6E4DB2"
+         position="absolute"
+         top="275vw"
+         left="35vw"
+         opacity="0.3" />):( 
         <Ring
           width="20vw"
           height="20vw"
@@ -98,7 +124,14 @@ const Circulos = () => {
           top="103vw"
           left="62.5vw"
           opacity="0.1"
-        />
+        />)}
+         {mobile? (<Ring  width="75vw"
+         height="75vw"
+         border="20vw solid #6E4DB2"
+         position="absolute"
+         top="355vw"
+         left="-45vw"
+         opacity="0.3" />):( 
         <Ring
           width="9.17vw"
           height="9.17vw"
@@ -107,7 +140,8 @@ const Circulos = () => {
           top="165vw"
           left="85vw"
           opacity="0.13"
-        />
+        />)}
+         {mobile? (null):( 
         <Ring
           width="18vw"
           height="18vw"
@@ -116,7 +150,8 @@ const Circulos = () => {
           top="175vw"
           left="60vw"
           opacity="0.2"
-        />
+        />)}
+         {mobile? (null):( 
         <Ring
           width="27vw"
           height="27vw"
@@ -125,7 +160,9 @@ const Circulos = () => {
           top="195vw"
           left="23.47vw"
           opacity="0.1"
-        />
+        />)}
+
+{mobile? (null):( 
         <Ring
           width="36vw"
           height="36vw"
@@ -134,7 +171,9 @@ const Circulos = () => {
           top="220vw"
           left="-30vw"
           opacity="0.1"
-        />
+        />)}
+
+{mobile? (null):( 
         <Ring
           width="35vw"
           height="35vw"
@@ -143,14 +182,21 @@ const Circulos = () => {
           top="230vw"
           left="50vw"
           opacity="0.2"
-        />
+        />)}
+         {mobile? (<Circle
+          width="150vw"
+          height="3000vw"
+          color="#5000FF"
+          right="-25vw"
+          top="400vw"
+        />):( 
         <Circle
           width="150vw"
           height="300vw"
           color="#5000FF"
           right="-25vw"
           top="160vw"
-        />
+        />)}
       </Box>
     </Col>
   );
@@ -159,26 +205,33 @@ const Circulos = () => {
 const Home = () => {
   //este estado es como que no anda pero no se porq
   const [openModal, setOpenModal] = useState(false);
-
+  const ipad=useMediaQuery('(max-width:1023px)');
+  const mobile=useMediaQuery('(max-width:768px)');  
   return (
-    <Col position="relative" display="block" marginTop="-3.5vw">
+    <Col position="relative"  display="block" marginTop="1vw">
       <Circulos />
       <Col zIndex={1}>
-        <Rectangulo />
+        {ipad? null:
+        <Rectangulo />}
+
+         {mobile? (null):( 
         <Texto
           subtitulo="Con estrategias de Branding,Marketing y el poder del Diseño"
           top="16vw"
           left="13.9vw"
         >
           Juntos hacemos que tu marca despegue y suba de nivel
-        </Texto>
+        </Texto>)}
+        {mobile? (null):( 
         <Button
           text="Agendar"
           top="41vw"
           left="40vw"
           comentario="Agenda un meet para que podamos asesorarte"
           onClick={() => setOpenModal((o) => !o)}
-        />
+        />)}
+
+
         {/* /////////////////////MODAL///////////////////// */}
         <Dialog open={openModal} onClose={() => setOpenModal(false)}>
           {/* <ThemeProvider theme={dialog}> */}
@@ -186,7 +239,9 @@ const Home = () => {
           {/* </ThemeProvider> */}
         </Dialog>
         {/* /////////////////////////////////////////////// */}
-        <Banner top="78vw" width="100vw" height="22.36vw" />
+      {/*   <Banner top="78vw" width="100vw" height="22.36vw" /> */}
+
+      {mobile? (null):( 
         <Col paddingTop="101vw" alignItems="center">
           <Row justifyContent="flex-end" style={{ marginLeft: "-13.5vw" }}>
             <Texto>
@@ -215,7 +270,10 @@ const Home = () => {
               Adaptandonos a tu presupuesto.
             </Tarjeta1>
           </Row>
-        </Col>
+        </Col>)}
+
+
+        {mobile? (null):( 
         <Col alignItems="center">
           <Row justifyContent="flex-end" style={{ marginLeft: "-13.5vw" }}>
             <Texto>Servicios</Texto>
@@ -237,7 +295,9 @@ const Home = () => {
               desarrollamos tu web, sin utilizar plantillas.
             </Tarjeta>
           </Row>
-        </Col>
+        </Col>)}
+        
+        {mobile? (null):( 
         <Row
           justifyContent="center"
           paddingTop="1vw"
@@ -260,6 +320,9 @@ const Home = () => {
             </Row>
           </Col>
         </Row>
+        )}
+
+{mobile? (null):( 
         <Col alignItems="center" marginBottom="2vw">
           <Row
             justifyContent="flex-end"
@@ -280,9 +343,10 @@ const Home = () => {
               </div>
             </div>
           </Row>
-        </Col>
-        <Footer />
-        <Col paddingTop="4vw" />
+        </Col>)}
+        {mobile? (<Col paddingTop="700vw" />):( <Footer/>)
+        }
+        
       </Col>
     </Col>
   );

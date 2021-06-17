@@ -9,11 +9,12 @@ import Home from "./screens/Home/home";
 import useMediaQuery from "./components/MediaQuery";
 
 function App() {
-  const mobile = useMediaQuery("(max-width: 768px)");
+  const mobile = useMediaQuery("(max-width: 1000px)");
+  
 
   return (
     <div className="App">
-      {mobile ? <NavBar /> : <NavBar />}
+      {mobile ? <NavBar/>: <NavBar />} {/* poner en null el componente */}
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/servicios" component={Servicios} />

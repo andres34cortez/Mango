@@ -1,6 +1,6 @@
 import React from "react";
 import "./Textos.css";
-
+import useMediaQuery from "../MediaQuery";
 interface Props {
   children?: React.ReactNode;
   subtitulo?: string;
@@ -10,7 +10,9 @@ interface Props {
 }
 
 const Texto = (props: Props) => {
+  const ipad=useMediaQuery('(max-widht:1000px)')
   return (
+    
     <div
       style={{
         top: `${props.top}`,
@@ -21,8 +23,8 @@ const Texto = (props: Props) => {
         position: "absolute",
       }}
     >
-      <h1>{props.children}</h1>
-      <h2>{props.subtitulo}</h2>
+      <h1 className="titulo1">{props.children}</h1>
+      <h2 className="subtitulo1">{props.subtitulo}</h2>
     </div>
   );
 };

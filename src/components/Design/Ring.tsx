@@ -10,6 +10,7 @@ interface Props {
   left?: string;
   top?: string;
   opacity?:string;
+ 
 }
 
 const Circle = (props: Props) => {
@@ -25,6 +26,7 @@ const Circle = (props: Props) => {
         left: `${props.left}`,
         top: `${props.top}`,
         opacity:`${props.opacity}`
+        
       }}
     />
   );
