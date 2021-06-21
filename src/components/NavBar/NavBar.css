@@ -16,6 +16,11 @@
   height: 8vw;
 }
 }
+@media (max-width:768px){
+  .navContainer{
+    height: 18vw;
+  }
+  }
 
 .row {
   display: flex;

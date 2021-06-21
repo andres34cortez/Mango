@@ -29,7 +29,9 @@ import d from "../../assets/4b.png";
 
 import f from "../../assets/6.png";
 import useMediaQuery from "../../components/MediaQuery";
-import { Dialog } from "@material-ui/core";
+import { Dialog, Divider } from "@material-ui/core";
+import TextoMB from "../../components/Design/TextosMB";
+import { height } from "@material-ui/system";
 // import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 
 // const dialog = createMuiTheme({
@@ -214,7 +216,12 @@ const Home = () => {
         {ipad? null:
         <Rectangulo />}
 
-         {mobile? (null):( 
+         {mobile? (  <TextoMB
+          subtitulo="Con estrategias de Branding,Marketing y el poder del Diseño"
+          top="35vw"
+          left="1vw"
+        >
+        </TextoMB>):( 
         <Texto
           subtitulo="Con estrategias de Branding,Marketing y el poder del Diseño"
           top="16vw"
@@ -222,7 +229,13 @@ const Home = () => {
         >
           Juntos hacemos que tu marca despegue y suba de nivel
         </Texto>)}
-        {mobile? (null):( 
+        {mobile? (<Button
+          text="Agendar"
+          top="91.56vw"
+          left="4.9vw"
+          
+          onClick={() => setOpenModal((o) => !o)}
+        />):( 
         <Button
           text="Agendar"
           top="41vw"
@@ -239,7 +252,7 @@ const Home = () => {
           {/* </ThemeProvider> */}
         </Dialog>
         {/* /////////////////////////////////////////////// */}
-      {/*   <Banner top="78vw" width="100vw" height="22.36vw" /> */}
+        {mobile? (<Banner top="140vw" width="100vw" height="50vw" />):(<Banner top="78vw" width="100vw" height="22.36vw" />)}
 
       {mobile? (null):( 
         <Col paddingTop="101vw" alignItems="center">

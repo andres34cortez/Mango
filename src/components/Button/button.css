@@ -11,11 +11,11 @@
   border-radius: 0.6vw;
 }
 
-@media(max-width: 768px){
-.Button {
-    background: #ce2323;
-}}
+
   
+
+
+
 .Button:hover {
   background: #00ff66ea;
 }
@@ -46,3 +46,24 @@ h3 {
   text-align: center;
   color: #f5f5f5;
 }
+
+
+@media(max-width: 768px){
+  .Button {
+      
+      width: 26.87vw;
+      height: 11.25vw;
+      border-radius: 1.8vw;
+  }
+  .texto{
+
+    margin: 0px;
+    font-family: Roboto;
+    font-style: normal;
+ 
+    font-size: 4vw;
+    line-height: 50vw;
+    text-align: center;
+    color: black;
+}
+  }

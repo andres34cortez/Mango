@@ -1,0 +1,24 @@
+
+  
+  .submobile{
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.75vw;
+    line-height:4.4vw;
+    text-align: left;
+    /* ligth gray */
+    
+    color: #F5F5F5;
+  }
+  .titmobile{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 7.5vw;
+    line-height: 7.5vw;
+    text-align: left;
+    color: #F5F5F5;
+  }
+  
