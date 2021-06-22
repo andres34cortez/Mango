@@ -8,6 +8,7 @@
   border-radius: 1vw;
   justify-content: center;
   align-self: center;
+  padding-bottom: 1vw;
 }
 
 .terminos {
@@ -53,4 +54,33 @@
   size: 30%;
   margin-left: 5%;
   padding-left: 1.5vw;
+}
+@media(max-width:768px){
+  .terminos {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2vw;
+    line-height: 1;
+    color: #f5f5f5;
+  }
+  .site {
+    /* h5 */
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2vw;
+    line-height: 1vw;
+    text-align: right;
+    color: #cbc0ff;
+    padding-top: -10vw;
+  }
+  .Logo2 {
+    margin-top: 3vw;
+    margin-bottom:4vw;
+    
+    margin-left:4vw;
+    padding-left:-1vw;
+  }
+
 }

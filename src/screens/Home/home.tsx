@@ -310,7 +310,25 @@ const Home = () => {
           </Row>
         </Col>)}
         
-        {mobile? (null):( 
+        {mobile? (<Row
+          justifyContent="center"
+          paddingTop="440vw"
+          alignItems="center"
+          zIndex={1}
+        >
+          <img src={Notas} alt="" style={{ height: "48vw" }} />
+          <Col marginLeft="6vw" marginTop="-8vw">
+            <div>
+              <h1 style={{textAlign:"center", fontSize:"6vw",lineHeight:"7.5vw", paddingBottom: "1vw" }}>
+                Agenda tu <br /> Consulta
+              </h1>
+              
+            </div>
+            <Row style={{ paddingTop: "0vw", }} justifyContent="flex-end">
+              <Button text="Agendar" onClick={() => setOpenModal((o) => !o)} />
+            </Row>
+          </Col>
+        </Row>):( 
         <Row
           justifyContent="center"
           paddingTop="1vw"
@@ -335,14 +353,34 @@ const Home = () => {
         </Row>
         )}
 
-{mobile? (null):( 
+{mobile? (<Col alignItems="center" marginBottom="2vw">
+          <Row
+            justifyContent="flex-end"
+            paddingTop="20vw"
+            style={{ marginLeft: "0vw" , zIndex:1 }}
+          >
+            <h1 style={{fontSize:"14vw"}}>Clientes</h1>
+          </Row>
+          <Row paddingTop="7vw"  paddingBottom="40vw" zIndex={1}>
+            <div style={{ marginRight: "1vw" }} />
+            <div style={{ maxHeight: "10,9vw" }}>
+              <div style={{ padding: "1vw", maxBlockSize:"25vw"}}>
+                <img src={a} style={{ padding: "1vw", maxBlockSize:"25vw" }} />
+                <img src={b} style={{ padding: "1vw", maxBlockSize:"25vw" }} />
+                <img src={c} style={{ padding: "1vw",maxBlockSize:"25vw"}} />
+                <img src={d} style={{ padding: "1vw", maxBlockSize:"25vw" }} />
+                <img src={f} style={{ padding: "1vw", maxBlockSize:"25vw"}} />
+              </div>
+            </div>
+          </Row>
+        </Col>):( 
         <Col alignItems="center" marginBottom="2vw">
           <Row
             justifyContent="flex-end"
             paddingTop="5vw"
             style={{ marginLeft: "-.5vw" }}
           >
-            <Texto>Clientes</Texto>
+            <Texto >Clientes</Texto>
           </Row>
           <Row paddingTop="7vw" zIndex={1}>
             <div style={{ marginRight: "1vw" }} />
@@ -357,7 +395,7 @@ const Home = () => {
             </div>
           </Row>
         </Col>)}
-        {mobile? (<Col paddingTop="700vw" />):( <Footer/>)
+        {mobile? (<Footer/>):( <Footer/>)
         }
         
       </Col>

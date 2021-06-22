@@ -5,6 +5,7 @@ import { Row, Col } from "jsxstyle";
 import useMediaQuery from "../MediaQuery";
 import Open from "../../assets/open.png"
 import Logo from "../../assets/Logo.png";
+import Logomob from "../../assets/Logomob.png"
 
 const MenuMobile = (props: {onClick: () => void}) => {
   const [active, serActive] = useState("/");
@@ -104,7 +105,7 @@ const NavBar = () => {
         <MenuMobile onClick={() => setOpenMenu(false)}/>
       </Col> : 
       <div className="row">
-      <img src={Logo} alt="" className="logo" />
+      <div>  <img src={Logomob} alt="" className="logo1" /></div>
       {mobile ? (
         <Row border="1px solid yellow">
           <img src={Open} alt="" className="menuIcon" onClick={() => setOpenMenu(true)}/>
