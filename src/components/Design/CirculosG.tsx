@@ -27,9 +27,9 @@ const CircleG = (props: Props) => {
         justifyContent: "center",
       }}
     > {mobile?(<Row style={{ position: "absolute"  }}>
-    <img src={Rocket} style={{width:"55vw"}} />
+    <img src={Rocket} style={{maxHeight:"68vw",width:"55vw"}} />
   </Row>):(<Row style={{ position: "absolute"  }}>
-        <img src={Rocket} style={{width:"45vw",}} />
+        <img src={Rocket} style={{maxHeight:"64vw", width:"45vw",}} />
       </Row>)}
       
       <Row>
