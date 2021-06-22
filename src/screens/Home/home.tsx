@@ -1,18 +1,20 @@
 import React, { useState } from "react";
 import { Col, Row, Box } from "jsxstyle";
 import "./home.css";
-
+//componentes
 import Ring from "../../components/Design/Ring";
 import Rectangulo from "../../components/Design/Rectangulo";
 import Button from "../../components/Button/button";
 import CircleG from "../../components/Design/CirculosG";
 import Texto from "../../components/Design/Textos";
+import TextoMB from "../../components/Design/TextosMB";
+import TextoMB2 from "../../components/Design/TextosMB2";
 import Banner from "../../components/Design/Banner";
 import Circle from "../../components/Design/Circulos";
 import Tarjeta1 from "../../components/Design/Tarjeta1";
 import Tarjeta from "../../components/Design/Tarjeta";
 import ModalHome from "../../components/Design/ModalHome";
-
+//imagenes
 import Agilidad from "../../assets/Agilidad.png";
 import Transparencia from "../../assets/transparencia.png";
 import Low from "../../assets/Low.png";
@@ -21,17 +23,18 @@ import Marketing from "../../assets/Marketing.png";
 import Branding from "../../assets/Branding.png";
 import Desarrollo from "../../assets/Desarrollo.png";
 import Notas from "../../assets/Telefono.png";
-
 import a from "../../assets/1.png";
 import b from "../../assets/2b.png";
 import c from "../../assets/3b.png";
 import d from "../../assets/4b.png";
-
 import f from "../../assets/6.png";
+import MarketingMB from "../../assets/MarketingMB.png";
+import BrandingMB from "../../assets/BrandingMB.png";
+import DesarrolloMB from "../../assets/DesarrolloMB.png";
+//material
 import useMediaQuery from "../../components/MediaQuery";
-import { Dialog, Divider } from "@material-ui/core";
-import TextoMB from "../../components/Design/TextosMB";
-import { height } from "@material-ui/system";
+import { Dialog } from "@material-ui/core";
+
 // import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 
 // const dialog = createMuiTheme({
@@ -66,7 +69,7 @@ const Circulos = () => {
           height="97vw"
           color="#1B007F"
           right="-20.22vw"
-          top="40vw"
+          top="20vw"
         /> ):(<CircleG
           width="75.69vw"
           height="75.69vw"
@@ -218,8 +221,8 @@ const Home = () => {
 
          {mobile? (  <TextoMB
           subtitulo="Con estrategias de Branding,Marketing y el poder del Diseño"
-          top="35vw"
-          left="1vw"
+          top="20vw"
+          left="3vw"
         >
         </TextoMB>):( 
         <Texto
@@ -231,7 +234,7 @@ const Home = () => {
         </Texto>)}
         {mobile? (<Button
           text="Agendar"
-          top="91.56vw"
+          top="75vw"
           left="4.9vw"
           
           onClick={() => setOpenModal((o) => !o)}
@@ -252,9 +255,34 @@ const Home = () => {
           {/* </ThemeProvider> */}
         </Dialog>
         {/* /////////////////////////////////////////////// */}
-        {mobile? (<Banner top="140vw" width="100vw" height="50vw" />):(<Banner top="78vw" width="100vw" height="22.36vw" />)}
+        {mobile? (<Banner top="120vw" width="100vw" height="50vw" />):(<Banner top="78vw" width="100vw" height="22.36vw" />)}
 
-      {mobile? (null):( 
+      {mobile? <Col paddingTop="180vw" alignItems="center" zIndex={120}>
+            
+            <TextoMB2>
+              ¿Por qué <span style={{ color: "#00FF66" }}>MANGO VERDE</span>?
+            </TextoMB2>
+            <div style={{ marginTop: "20vw" }}/>
+            <Tarjeta1 imagen={Agilidad} title="Agilidad y Resultados">
+              Sabemos que estás buscando atraer más clientes y conseguir subir
+              tus ventas, la agilidad de nuestros servicios y la creación de
+              campañas disruptivas han brindado buenos resultados a nuestros
+              clientes.
+            </Tarjeta1>
+            <div style={{ marginTop: "6vw" }}/>
+            <Tarjeta1 imagen={Transparencia} title="Transparencia">
+              La transparencia con nuestros clientes es uno de nuestros más
+              grandes diferenciadores. Sabemos que tu también debes tener el
+              control de tus pagos en social media y resultados 100% reales.
+            </Tarjeta1>
+            <div style={{ marginTop: "6vw" }}/>
+            <Tarjeta1 imagen={Low} title="Low budget">
+              Entendemos tus necesidades, vamos contigo de la mano, apoyandote y
+              ayudandote a tener una marca de nivel y generar más clientes.
+              Adaptandonos a tu presupuesto.
+            </Tarjeta1>
+          
+        </Col>:( 
         <Col paddingTop="101vw" alignItems="center">
           <Row justifyContent="flex-end" style={{ marginLeft: "-13.5vw" }}>
             <Texto>
@@ -286,7 +314,25 @@ const Home = () => {
         </Col>)}
 
 
-        {mobile? (null):( 
+        {mobile? 
+        
+          <Col paddingTop='23vw' zIndex={120} alignItems="center">
+            <div style={{
+              fontFamily: 'Roboto',
+              fontStyle: 'normal',
+              fontWeight: 500,
+              fontSize: '12vw',
+              textAlign: 'center',
+              color: '#f5f5f5',
+            }}>
+            Servicios</div>
+            <div style={{ marginTop: "7vw" }} />
+            <Tarjeta imagen={MarketingMB} title="Marketing"/>
+            <div style={{ marginTop: "6vw" }} />
+            <Tarjeta imagen={BrandingMB} title="Branding"/>
+            <div style={{ marginTop: "6vw" }} />
+            <Tarjeta imagen={DesarrolloMB} title="Desarrollo WEB"/>
+          </Col>:( 
         <Col alignItems="center">
           <Row justifyContent="flex-end" style={{ marginLeft: "-13.5vw" }}>
             <Texto>Servicios</Texto>
@@ -312,7 +358,7 @@ const Home = () => {
         
         {mobile? (<Row
           justifyContent="center"
-          paddingTop="440vw"
+          paddingTop="25vw"
           alignItems="center"
           zIndex={1}
         >
@@ -395,9 +441,7 @@ const Home = () => {
             </div>
           </Row>
         </Col>)}
-        {mobile? (<Footer/>):( <Footer/>)
-        }
-        
+        {mobile? (<Footer/>):( <Footer/>)}        
       </Col>
     </Col>
   );

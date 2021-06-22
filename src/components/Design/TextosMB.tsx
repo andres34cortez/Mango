@@ -19,15 +19,10 @@ const TextoMB = (props: Props) => {
         top: `${props.top}`,
         left: `${props.left}`,
         zIndex: 8,
-        height: "70vw",
-        width: "75vw",
         position: "absolute",
-        paddingLeft:"3vw"
       }}
-    >
-   
-     
-      <p className="titmobile"> Juntos hacemos que tu marca despegue y suba de nivel</p>
+    >    
+      <p className="titmobile"> Juntos hacemos que <br/>tu marca despegue <br/> y suba de nivel</p>
       <p className="submobile">Con estrategias de Branding, <br></br>Marketing y el poder del Diseño</p>
     </div>
   );

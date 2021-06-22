@@ -1,21 +1,19 @@
 .tarjeta0 {
     height: 23.06vw;
     width: 20.14vw;
-    border-radius: 1.04vw;
+    border-radius: 15px;
     flex-wrap: wrap;
     background-color: #1b007f;
   }
   
   .imagen0 {
-  
-    width: 100%;
+      width: 100%;
   }
   
   .backImagen0 {
     width: 100%;
-    
-    border-top-left-radius: 1.04vw;
-    border-top-right-radius: 1.04vw;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,5 +41,24 @@
     text-align: left;
     padding-left: 1.5vw;
     max-width: 16.46vw;
+  }
+
+  @media(max-width:768px){
+    .tarjeta0{
+      width: 290px ;
+      height: auto;
+      align-items: center;
+    }
+    .text0{
+      min-width: 250px;
+      font-size: 14px;
+      text-align: left;
+      padding: 0px 20px 25px 20px;
+    }
+    .title0{
+      font-size:18px ;
+      padding: 10px 20px 0px 20px;
+    }
+    
   }
   

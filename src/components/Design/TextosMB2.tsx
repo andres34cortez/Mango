@@ -1,7 +1,6 @@
 import React from "react";
 import "./TextosMB2.css";
 import useMediaQuery from "../MediaQuery";
-import { Flex } from "jsxstyle";
 interface Props {
   children?: React.ReactNode;
   subtitulo?: string;
@@ -19,13 +18,7 @@ const TextoMB2 = (props: Props) => {
         top: `${props.top}`,
         left: `${props.left}`,
         zIndex: 8,
-        height: "37.2vw",
-        width: "80vw",
-       
-       position:"absolute",
-        padding:"0vw 10vw",
-
-        
+        position:"absolute",
       }}
     >
       <p className="Que">{props.children}</p>

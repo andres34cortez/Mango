@@ -1,8 +1,7 @@
 .Que {
     font-family: Roboto;
     font-style: normal;
-    font-weight: bold;
-    font-size: 5.75vw;
+      font-size: 5.75vw;
     line-height:6vw;
     text-align: center;
     color: #f5f5f5;
@@ -12,10 +11,9 @@
   
   .sub {
     /* h5 */
-  
-    font-family: Roboto;
+      font-family: Roboto;
     font-style: normal;
-    
+    padding: 0vw 10vw;
     font-size: 3.5vw;
     line-height:3.5w;
     text-align: center;

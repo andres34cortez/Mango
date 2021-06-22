@@ -54,14 +54,11 @@ const Banner = (props: Props) => {
         <img src={Pantalla} style={{ margin:"1.8vw",width: "38vw" }} />
       </Row>)}
       
-      
-      
-      
       {mobile?  
        (<Row>
        <TextoMB2
           subtitulo="¡Nuestro enfoque es ayudar a nuestros clientes a despegar sus negocios y llevar su empresa al siguiente nivel, somos más que una agencia de Marketing Digital!"
-          top="145vw"
+          top="125vw"
           left="0vw"
           efecto=""
         >

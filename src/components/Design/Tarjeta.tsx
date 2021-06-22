@@ -5,7 +5,7 @@ import { Col } from "jsxstyle";
 interface Props {
   imagen: string;
   title: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 const Tarjeta = (props: Props) => {
