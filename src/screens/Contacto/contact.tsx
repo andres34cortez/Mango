@@ -2,10 +2,9 @@ import React from "react";
 import { Col, Row, Box } from "jsxstyle";
 import Footer from "../../components/Design/Footer";
 
-
-
 import Circle from "../../components/Design/Circulos";
 import ModalContacto from "../../components/Design/ModalContacto";
+import useMediaQuery from "../../components/MediaQuery";
 
 const Circulos = () => {
   return (
@@ -36,11 +35,35 @@ const Circulos = () => {
     </Col>
   );
 };
+
 const Contacto = () => {
+  const mobile=useMediaQuery('(max-width:768px)');
   return (
-    <Col alignItems="center" zIndex={0}>
+    
+    <Col alignItems="center"  zIndex={0} flexGrow={1} height='100vh'>
     <Circulos/>
-    <Row
+   {mobile ?
+   <Col
+        paddingTop={100}
+          alignItems="flex-strat"
+          
+          zIndex={1}
+          flexGrow={1}
+        >    
+          <Col  maxWidth='80vw'>
+            <div>
+              <h1 style={{ margin: 0, paddingBottom: "1vw",fontSize:"9vw" }}>
+               Queremos Leerte
+              </h1>
+              <h2 style={{ marginTop: "4vw",fontSize:"3vw",lineHeight:"3vw" }}>
+              Puede ser solo un hola, puedes contarnos un proyecto que tengas en  mente, una anécdota, alguna observación que tengas de nosotros, si te quieres quejar,  queremos leerte.
+              </h2>
+            </div>
+          </Col>
+          <Col marginTop="3vw">
+            <ModalContacto/>
+          </Col>
+        </Col>: <Row
           justifyContent="center"
           paddingTop="10vw"
           alignItems="center"
@@ -59,8 +82,8 @@ const Contacto = () => {
           <Col marginLeft="17vw" marginTop="-3vw">
             <ModalContacto/>
           </Col>
-        </Row>
-       <Col padding="12vw">
+        </Row>}
+       <Col padding="10vw">
         <Footer />
       </Col> 
     </Col>

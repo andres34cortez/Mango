@@ -1,7 +1,6 @@
 import React from "react";
 import "./ModalHome.css";
 import { Col, Row } from "jsxstyle";
-import Button from "../Button/button";
 
 const ModalHome = () => {
   return (
@@ -22,7 +21,7 @@ const ModalHome = () => {
             Acepto los Terminos y<br /> condiciones
           </div>
         </Row>
-        <Button text="Enviar" left="9.9vw" top="27vw" />
+        <button className="botonModal" >Enviar</button>
       </Col>
     </Col>
   );

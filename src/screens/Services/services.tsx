@@ -45,14 +45,14 @@ const Circulos = () => {
           border="5vw solid #F5F5F5"
           position="absolute"
           top="1vw"
-          left="80vw"
+          left="70vw"
           opacity="0.1"
         />
          <Circle
           width="90vw"
           height="90vw"
           color="#5000FF"
-          right="-10vw"
+          right="0vw"
           top="1vw"
         />
       </Box>
@@ -64,7 +64,7 @@ const Servicios = () => {
   const ipad=useMediaQuery('(max-width:1000px)');
   const mobile=useMediaQuery('(max-width:768px)');
   return (
-    <Col>
+    <Col >
       <Circulos />
       {mobile? ( <Col paddingTop='23vw' zIndex={120} alignItems="center">
             <div style={{

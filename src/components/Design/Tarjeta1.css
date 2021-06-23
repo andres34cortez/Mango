@@ -1,5 +1,5 @@
 .tarjeta1 {
-  height: 23.06vw;
+  min-height: 23.06vw;
   width: 20.14vw;
   border-radius: 15px;
   flex-wrap: wrap;

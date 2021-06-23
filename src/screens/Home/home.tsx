@@ -46,6 +46,17 @@ import { Dialog } from "@material-ui/core";
 //       scrollPaper: {
 //         backgroundColor: "red",
 //       },
+//       paper: {
+//         backgroundColor: "yellow",
+//       },
+//       paperScrollPaper: {
+//         backgroundColor: "yellow",
+//       },
+//     },
+//     MuiPaper: {
+//       root: {
+//         backgroundColor: "yellow",
+//       },
 //     },
 //   },
 // });
@@ -249,11 +260,13 @@ const Home = () => {
 
 
         {/* /////////////////////MODAL///////////////////// */}
+        {/* <ThemeProvider theme={dialog}> */}
         <Dialog open={openModal} onClose={() => setOpenModal(false)}>
-          {/* <ThemeProvider theme={dialog}> */}
+          
           <ModalHome />
-          {/* </ThemeProvider> */}
+          
         </Dialog>
+        {/* </ThemeProvider> */}
         {/* /////////////////////////////////////////////// */}
         {mobile? (<Banner top="120vw" width="100vw" height="50vw" />):(<Banner top="78vw" width="100vw" height="22.36vw" />)}
 
