@@ -40,7 +40,7 @@ const Contacto = () => {
   const mobile=useMediaQuery('(max-width:768px)');
   return (
     
-    <Col alignItems="center"  zIndex={0} flexGrow={1} height='100vh'>
+    <Col alignItems="center"  zIndex={0} flexGrow={mobile?1:0} height={mobile?'100vh':'auto'}>
     <Circulos/>
    {mobile ?
    <Col
