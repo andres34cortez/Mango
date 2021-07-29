@@ -49,7 +49,8 @@ const Contacto = () => {
           
           zIndex={1}
           flexGrow={1}
-        >    
+        >   
+ 
           <Col  maxWidth='80vw'>
             <div>
               <h1 style={{ margin: 0, paddingBottom: "1vw",fontSize:"9vw" }}>
